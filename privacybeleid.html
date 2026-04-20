@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Privacybeleid – GRIP Begeleiding Zoetermeer</title>
+<meta name="description" content="Privacybeleid van GRIP Begeleiding. Hoe wij omgaan met persoonsgegevens conform de AVG."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1B3A5C;--deep:#122842;--amber:#F4A829;--al:#FDE8B5;--sky:#E8F4FD;--sm:#B8D4E8;--white:#fff;--text:#1A2A3A;--muted:#5A7A9A;--border:#D4E6F3;--bg:#F5FAFF}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:68px}
+.nlogo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nicon{width:40px;height:40px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nicon svg{width:24px;height:24px}
+.ntext strong{font-size:20px;font-weight:900;letter-spacing:-.5px;color:var(--navy);display:block;line-height:1}
+.ntext span{font-size:9px;letter-spacing:2.5px;color:var(--muted);font-weight:500;text-transform:uppercase;margin-top:1px;display:block}
+.nlinks{display:flex;align-items:center;gap:4px;list-style:none}
+.nlinks a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;padding:8px 13px;border-radius:8px;transition:all .2s}
+.nlinks a:hover,.nlinks a.active{color:var(--navy);background:var(--sky)}
+.ncta{background:var(--navy)!important;color:var(--white)!important;border-radius:10px!important;font-weight:700!important}
+section{padding:88px 5vw}
+.si{max-width:1080px;margin:0 auto}
+.lbl{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--amber);margin-bottom:12px;display:block}
+.ttl{font-size:clamp(26px,3.6vw,40px);font-weight:900;letter-spacing:-1px;color:var(--navy);margin-bottom:14px;line-height:1.1}
+.ttl em{font-style:italic;font-family:'Lora',serif;font-weight:400}
+.sub{font-size:16px;color:var(--muted);line-height:1.75;max-width:560px}
+.bg{background:var(--bg)}
+.bnav{background:var(--navy)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;text-decoration:none;border:none;cursor:pointer;transition:all .2s}
+.btn-a{background:var(--amber);color:var(--deep)}.btn-a:hover{background:#E89A20;transform:translateY(-1px)}
+.btn-w{background:rgba(255,255,255,.08);color:var(--sm);border:.5px solid rgba(255,255,255,.2)}.btn-w:hover{background:rgba(255,255,255,.15)}
+.phero{background:var(--navy);padding:136px 5vw 80px;position:relative;overflow:hidden}
+.phero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 40%,rgba(244,168,41,.1),transparent 50%);pointer-events:none}
+.phi{max-width:1080px;margin:0 auto;position:relative;z-index:2}
+.bc{display:flex;align-items:center;gap:8px;margin-bottom:16px}
+.bc a{color:var(--sm);font-size:13px;text-decoration:none}.bc a:hover{color:var(--amber)}
+.bc span{color:rgba(255,255,255,.25);font-size:13px}
+.phero h1{font-size:clamp(30px,4.2vw,48px);font-weight:900;color:var(--white);letter-spacing:-1.5px;line-height:1.05;margin-bottom:14px}
+.phero h1 em{font-style:italic;font-family:'Lora',serif;font-weight:400;color:var(--amber)}
+.phero-sub{font-size:17px;color:var(--sm);line-height:1.65;max-width:580px;margin-bottom:24px}
+.hpills{display:flex;gap:10px;flex-wrap:wrap}
+.hpill{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.08);border:.5px solid rgba(255,255,255,.15);border-radius:20px;padding:6px 13px;font-size:13px;color:var(--sm);font-weight:500}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:48px}
+.prose p{font-size:15px;line-height:1.8;color:#3A5068;margin-bottom:14px}
+.prose p strong{color:var(--navy);font-weight:700}
+.prose h3{font-size:17px;font-weight:800;color:var(--navy);margin:22px 0 10px;letter-spacing:-.3px}
+.qb{background:var(--navy);border-radius:16px;padding:22px 26px;margin:20px 0}
+.qb p{font-family:'Lora',serif;font-style:italic;font-size:17px;color:var(--sky);line-height:1.6;margin:0}
+.qb cite{font-family:'DM Sans',sans-serif;font-style:normal;font-size:11px;color:var(--amber);font-weight:600;letter-spacing:1px;display:block;margin-top:8px}
+.card{background:var(--white);border:.5px solid var(--border);border-radius:18px;padding:26px 22px;transition:all .22s}
+.card:hover{border-color:var(--amber);box-shadow:0 6px 24px rgba(27,58,92,.08);transform:translateY(-2px)}
+.ctas{background:var(--navy);border-radius:20px;padding:40px 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:56px}
+.ctas h3{font-size:22px;font-weight:900;color:var(--white);letter-spacing:-.5px;max-width:440px;line-height:1.2}
+.ctas h3 em{font-style:italic;font-family:'Lora',serif;font-weight:400;color:var(--amber)}
+.cm{display:flex;align-items:center;gap:14px;padding:13px 16px;border-radius:13px;background:var(--bg);border:.5px solid var(--border);text-decoration:none;transition:all .2s;margin-bottom:10px}
+.cm:hover{border-color:var(--navy);background:var(--sky)}
+.cm-ico{width:36px;height:36px;border-radius:9px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.cm strong{display:block;font-size:14px;color:var(--navy);font-weight:700}
+.cm span{font-size:12px;color:var(--muted)}
+.cform{background:var(--bg);border:.5px solid var(--border);border-radius:20px;padding:30px}
+.cform h3{font-size:18px;font-weight:800;color:var(--navy);margin-bottom:4px}
+.cfsub{font-size:13px;color:var(--muted);margin-bottom:20px}
+.fg{margin-bottom:12px}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.fg input,.fg select,.fg textarea{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);background:var(--white);outline:none;transition:border-color .2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--navy)}
+.fg textarea{height:84px;resize:vertical}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fsub{width:100%;padding:13px;background:var(--navy);color:var(--white);border:none;border-radius:11px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s;margin-top:4px}
+.fsub:hover{background:var(--deep)}
+.fok{display:none;background:#E8F5EE;border:1px solid #22A06B;border-radius:10px;padding:14px;text-align:center;margin-top:10px}
+.fok.show{display:block}
+.fok h4{color:#1A5C3A;font-size:14px;font-weight:700;margin-bottom:3px}
+.fok p{color:#3A7A5A;font-size:12px}
+.fprivacy{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;line-height:1.5}
+.fprivacy a{color:var(--navy);text-decoration:none}
+footer{background:var(--deep);padding:48px 5vw 28px}
+.fi{max-width:1080px;margin:0 auto}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;padding-bottom:28px;border-bottom:.5px solid rgba(255,255,255,.08);margin-bottom:20px}
+.flogo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.flm{width:34px;height:34px;background:var(--amber);border-radius:9px;display:flex;align-items:center;justify-content:center}
+.flm svg{width:20px;height:20px}
+.fln strong{font-size:17px;font-weight:900;color:var(--white);letter-spacing:-.3px;display:block}
+.fln small{font-size:9px;letter-spacing:2.5px;color:var(--sm);text-transform:uppercase}
+.fdesc{font-size:13px;color:var(--sm);line-height:1.65;max-width:230px}
+.fcol h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--white);margin-bottom:14px}
+.fcol ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.fcol ul a{font-size:13px;color:var(--sm);text-decoration:none;transition:color .2s}
+.fcol ul a:hover{color:var(--amber)}
+.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.fbot p,.fbot a{font-size:12px;color:var(--sm);text-decoration:none}.fbot a:hover{color:var(--amber)}
+@media(max-width:900px){.nlinks{display:none}.fgrid{grid-template-columns:1fr 1fr}.ctas{padding:28px 24px}section{padding:72px 5vw}.twocol{grid-template-columns:1fr;gap:40px}}
+@media(max-width:600px){.fgrid{grid-template-columns:1fr}.fr{grid-template-columns:1fr}section{padding:56px 5vw}}
+.phero{padding:100px 5vw 40px}
+.doc{max-width:760px;margin:0 auto;padding:48px 5vw 80px}
+.toc{background:var(--bg);border:.5px solid var(--border);border-radius:14px;padding:20px 24px;margin-bottom:40px}
+.toc h2{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:12px}
+.toc ol{padding-left:18px;display:flex;flex-direction:column;gap:5px}
+.toc ol li a{font-size:13px;color:var(--muted);text-decoration:none}.toc ol li a:hover{color:var(--navy)}
+.avg{margin-bottom:36px;padding-bottom:36px;border-bottom:.5px solid var(--border)}
+.avg:last-of-type{border-bottom:none}
+.avg h2{font-size:19px;font-weight:800;color:var(--navy);margin-bottom:12px;scroll-margin-top:90px}
+.avg p{font-size:14px;color:#3A5068;line-height:1.85;margin-bottom:12px}
+.avg p strong{color:var(--navy);font-weight:700}
+.avg ul{padding-left:18px;display:flex;flex-direction:column;gap:7px;margin-bottom:12px}
+.avg ul li{font-size:14px;color:#3A5068;line-height:1.65}
+.hl{background:var(--al);border-left:4px solid var(--amber);border-radius:0 10px 10px 0;padding:13px 18px;margin:16px 0}
+.hl p{font-size:14px;color:var(--navy);margin:0}
+.cbox{background:var(--navy);border-radius:14px;padding:24px 28px;margin-top:36px}
+.cbox h3{font-size:16px;font-weight:700;color:var(--white);margin-bottom:10px}
+.cbox p{font-size:14px;color:var(--sm);line-height:1.7}
+.cbox a{color:var(--amber);text-decoration:none}
+.meta{font-size:13px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nlogo"><div class="nicon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 12A6 6 0 1 0 12 18" stroke="#F4A829" stroke-width="2.2" stroke-linecap="round"/><line x1="12" y1="12" x2="18" y2="12" stroke="#F4A829" stroke-width="2.2" stroke-linecap="round"/><line x1="18" y1="12" x2="18" y2="16" stroke="#F4A829" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="18" r="1.5" fill="#E8F4FD"/></svg></div><div class="ntext"><strong>GRIP</strong><span>Begeleiding</span></div></a>
+  <ul class="nlinks"><li><a href="index.html">Home</a></li><li><a href="over-ons.html">Over ons</a></li><li><a href="autisme-begeleiding.html">Autisme</a></li><li><a href="lvb-begeleiding.html">LVB</a></li><li><a href="voor-verwijzers.html">Voor verwijzers</a></li><li><a href="scholen-werkgevers.html">Scholen &amp; werkgevers</a></li><li><a href="contact.html" class="ncta">Contact</a></li></ul>
+</nav>
+
+<div class="phero" style="background:var(--bg);border-bottom:.5px solid var(--border)">
+  <div style="max-width:760px;margin:0 auto">
+    <div class="bc" style="--sm:var(--muted)"><a href="index.html" style="color:var(--muted)">Home</a><span style="color:var(--border)">›</span><span style="color:var(--muted)">Privacybeleid</span></div>
+    <h1 style="color:var(--navy);font-size:clamp(28px,4vw,40px);font-weight:900;letter-spacing:-1px;margin-bottom:6px">Privacybeleid</h1>
+    <p class="meta">Laatste update: april 2026 · GRIP Begeleiding · KvK 76801284 · Zoetermeer</p>
+  </div>
+</div>
+
+<div class="doc">
+  <div class="toc">
+    <h2>Inhoudsopgave</h2>
+    <ol>
+      <li><a href="#v1">1. Wie is verantwoordelijk voor uw gegevens?</a></li>
+      <li><a href="#v2">2. Welke persoonsgegevens verwerken wij?</a></li>
+      <li><a href="#v3">3. Waarom verwerken wij persoonsgegevens?</a></li>
+      <li><a href="#v4">4. Op welke grondslag?</a></li>
+      <li><a href="#v5">5. Hoe lang bewaren wij uw gegevens?</a></li>
+      <li><a href="#v6">6. Delen wij gegevens met derden?</a></li>
+      <li><a href="#v7">7. Uw rechten als betrokkene</a></li>
+      <li><a href="#v8">8. Beveiliging</a></li>
+      <li><a href="#v9">9. Klachten</a></li>
+    </ol>
+  </div>
+
+  <div class="avg" id="v1">
+    <h2>1. Wie is verantwoordelijk?</h2>
+    <p>GRIP Begeleiding, gevestigd te Zoetermeer, is de verwerkingsverantwoordelijke voor de persoonsgegevens die in het kader van onze dienstverlening worden verwerkt.</p>
+    <p><strong>Contactgegevens:</strong><br>GRIP Begeleiding · Zoetermeer<br>KvK: 76801284 · AGB: 41521169<br>E-mail: <a href="mailto:info@gripbegeleiding.nl" style="color:var(--navy)">info@gripbegeleiding.nl</a><br>Telefoon: 079 720 05 20</p>
+  </div>
+
+  <div class="avg" id="v2">
+    <h2>2. Welke persoonsgegevens verwerken wij?</h2>
+    <p><strong>Identificatie- en contactgegevens:</strong></p>
+    <ul><li>Naam, geboortedatum en -plaats</li><li>Adres, telefoonnummer en e-mailadres</li><li>BSN-nummer (uitsluitend indien vereist voor declaratie)</li></ul>
+    <p><strong>Bijzondere persoonsgegevens (medisch/zorg):</strong></p>
+    <ul><li>Diagnose-informatie voor zover relevant voor de begeleiding</li><li>Zorghistorie en eerdere hulpverlening</li><li>Rapportages over functioneren en zelfredzaamheid (ZRM)</li><li>Correspondentie met verwijzers en gemeente</li></ul>
+    <div class="hl"><p>Bijzondere persoonsgegevens verwerken wij uitsluitend voor zover noodzakelijk voor het verlenen van goede zorg, op basis van een geldige verwerkingsgrondslag.</p></div>
+  </div>
+
+  <div class="avg" id="v3">
+    <h2>3. Waarom verwerken wij persoonsgegevens?</h2>
+    <ul>
+      <li>Uitvoering van de begeleidingsovereenkomst</li>
+      <li>Bijhouden van een cliëntdossier conform Wkkgz</li>
+      <li>Declareren bij gemeente (Wmo), SVB (PGB) of andere financiers</li>
+      <li>Communicatie met verwijzers (met toestemming)</li>
+      <li>Voldoen aan wettelijke verplichtingen (bewaarplicht)</li>
+    </ul>
+  </div>
+
+  <div class="avg" id="v4">
+    <h2>4. Op welke grondslag?</h2>
+    <ul>
+      <li><strong>Uitvoering van een overeenkomst</strong> — noodzakelijk voor de begeleidingsovereenkomst.</li>
+      <li><strong>Wettelijke verplichting</strong> — o.a. Wkkgz, Jeugdwet, Wmo.</li>
+      <li><strong>Toestemming</strong> — voor delen met derden; altijd intrekbaar.</li>
+      <li><strong>Vitaal belang</strong> — in uitzonderlijke veiligheidssituaties.</li>
+    </ul>
+  </div>
+
+  <div class="avg" id="v5">
+    <h2>5. Hoe lang bewaren wij uw gegevens?</h2>
+    <ul>
+      <li><strong>Cliëntdossier:</strong> 20 jaar na afsluiting (WGBO/jeugdhulp)</li>
+      <li><strong>Financiële administratie:</strong> 7 jaar (fiscale bewaarplicht)</li>
+      <li><strong>Contactformulier:</strong> maximaal 1 jaar</li>
+      <li><strong>E-mail:</strong> 2 jaar na laatste contact</li>
+    </ul>
+  </div>
+
+  <div class="avg" id="v6">
+    <h2>6. Delen wij gegevens met derden?</h2>
+    <p>Wij delen uw persoonsgegevens niet met derden zonder uw uitdrukkelijke toestemming, tenzij dit wettelijk verplicht is of noodzakelijk voor de uitvoering van de zorgovereenkomst. Wij verkopen uw gegevens nooit.</p>
+  </div>
+
+  <div class="avg" id="v7">
+    <h2>7. Uw rechten als betrokkene</h2>
+    <ul>
+      <li><strong>Inzage</strong> — u kunt opvragen welke gegevens wij van u verwerken.</li>
+      <li><strong>Rectificatie</strong> — u kunt onjuiste gegevens laten corrigeren.</li>
+      <li><strong>Gegevenswissing</strong> — in bepaalde situaties, tenzij wettelijke bewaarplicht van toepassing is.</li>
+      <li><strong>Beperking van verwerking</strong> — tijdelijk beperken mogelijk op verzoek.</li>
+      <li><strong>Dataportabiliteit</strong> — uw gegevens opvragen voor overdracht aan andere zorgaanbieder.</li>
+      <li><strong>Toestemming intrekken</strong> — altijd mogelijk voor verwerkingen op basis van toestemming.</li>
+    </ul>
+    <p>Verzoeken indienen via <a href="mailto:info@gripbegeleiding.nl" style="color:var(--navy)">info@gripbegeleiding.nl</a>. Wij reageren binnen 4 weken.</p>
+  </div>
+
+  <div class="avg" id="v8">
+    <h2>8. Beveiliging</h2>
+    <ul>
+      <li>Cliëntdossiers in een beveiligde, AVG-conforme omgeving</li>
+      <li>Communicatie via versleutelde kanalen (HTTPS)</li>
+      <li>Toegang beperkt tot noodzakelijke personen</li>
+      <li>Bij datalek: melding aan AP (indien vereist) binnen 72 uur</li>
+    </ul>
+  </div>
+
+  <div class="avg" id="v9">
+    <h2>9. Klachten</h2>
+    <p>Heeft u een klacht? Neem eerst contact op via info@gripbegeleiding.nl. U heeft ook het recht een klacht in te dienen bij:</p>
+    <p><strong>Autoriteit Persoonsgegevens</strong><br>Postbus 93374 · 2509 AJ Den Haag<br>autoriteitpersoonsgegevens.nl</p>
+  </div>
+
+  <div class="cbox">
+    <h3>Vragen over dit privacybeleid?</h3>
+    <p>E-mail: <a href="mailto:info@gripbegeleiding.nl">info@gripbegeleiding.nl</a> · Telefoon: 079 720 05 20<br>Wij reageren op privacy-verzoeken binnen <strong>4 weken</strong>.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="fi">
+    <div class="fbot" style="padding-top:20px;border-top:.5px solid rgba(255,255,255,.08)">
+      <p>© 2026 GRIP Begeleiding · KvK 76801284 · Zoetermeer</p>
+      <div style="display:flex;gap:20px"><a href="index.html">Home</a><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

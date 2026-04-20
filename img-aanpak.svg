@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B3A5C"/>
+      <stop offset="60%" style="stop-color:#2A5483"/>
+      <stop offset="100%" style="stop-color:#1B3A5C"/>
+    </linearGradient>
+    <linearGradient id="sofa" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2A5483"/>
+      <stop offset="100%" style="stop-color:#1B3A5C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Room background -->
+  <rect width="700" height="420" fill="url(#bg3)"/>
+  <!-- Wall accent -->
+  <rect x="0" y="0" width="700" height="260" fill="#1B3A5C" opacity="0.5"/>
+  <!-- Floor -->
+  <rect x="0" y="300" width="700" height="120" fill="#122842" opacity="0.6"/>
+  <!-- Warm light -->
+  <circle cx="560" cy="60" r="130" fill="#F4A829" opacity="0.07"/>
+
+  <!-- Window suggestion -->
+  <rect x="530" y="40" width="100" height="130" rx="6" fill="#E8F4FD" opacity="0.08" stroke="#B8D4E8" stroke-width="1.5" stroke-opacity="0.2"/>
+  <line x1="580" y1="40" x2="580" y2="170" stroke="#B8D4E8" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="530" y1="105" x2="630" y2="105" stroke="#B8D4E8" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- Couch/sofa -->
+  <rect x="80" y="265" width="540" height="50" rx="14" fill="url(#sofa)"/>
+  <rect x="80" y="235" width="540" height="38" rx="12" fill="#2A5483"/>
+  <!-- Couch armrests -->
+  <rect x="80" y="235" width="40" height="80" rx="10" fill="#2A5483"/>
+  <rect x="580" y="235" width="40" height="80" rx="10" fill="#2A5483"/>
+  <!-- Cushions -->
+  <rect x="130" y="242" width="120" height="28" rx="10" fill="#1B3A5C" opacity="0.6"/>
+  <rect x="270" y="242" width="120" height="28" rx="10" fill="#1B3A5C" opacity="0.6"/>
+  <rect x="450" y="242" width="120" height="28" rx="10" fill="#1B3A5C" opacity="0.6"/>
+
+  <!-- Coffee table -->
+  <rect x="240" y="310" width="220" height="12" rx="6" fill="#2A4070"/>
+  <rect x="260" y="322" width="10" height="30" rx="5" fill="#2A4070"/>
+  <rect x="430" y="322" width="10" height="30" rx="5" fill="#2A4070"/>
+  <!-- Cup on table -->
+  <rect x="333" y="298" width="18" height="15" rx="3" fill="#E8F4FD" opacity="0.7"/>
+  <ellipse cx="342" cy="298" rx="9" ry="4" fill="#E8F4FD" opacity="0.5"/>
+
+  <!-- COACH sitting left - GRIP shirt -->
+  <!-- Lower body on couch -->
+  <rect x="148" y="243" width="38" height="28" rx="8" fill="#1B3A5C"/>
+  <rect x="165" y="268" width="26" height="45" rx="13" fill="#1B3A5C"/>
+  <rect x="195" y="268" width="26" height="45" rx="13" fill="#1B3A5C"/>
+  <ellipse cx="178" cy="312" rx="18" ry="8" fill="#0D1828"/>
+  <ellipse cx="208" cy="312" rx="18" ry="8" fill="#0D1828"/>
+  <!-- Upper body / shirt with GRIP -->
+  <rect x="142" y="148" width="108" height="100" rx="18" fill="#1B3A5C"/>
+  <!-- GRIP logo badge -->
+  <rect x="163" y="163" width="64" height="30" rx="7" fill="#F4A829"/>
+  <text x="195" y="184" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="14" fill="#1B3A5C">GRIP</text>
+  <!-- Head -->
+  <circle cx="196" cy="126" r="32" fill="#C68642"/>
+  <!-- Hair dark -->
+  <ellipse cx="196" cy="99" rx="32" ry="14" fill="#2C1810"/>
+  <rect x="164" y="99" width="64" height="16" rx="8" fill="#2C1810"/>
+  <!-- Beard -->
+  <path d="M 170 134 Q 196 152 222 134" fill="#2C1810" opacity="0.38"/>
+  <!-- Eyes -->
+  <circle cx="187" cy="126" r="3.5" fill="#6B3A1F"/>
+  <circle cx="205" cy="126" r="3.5" fill="#6B3A1F"/>
+  <!-- Warm expression -->
+  <path d="M 185 139 Q 196 148 207 139" stroke="#6B3A1F" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <!-- Arms - one arm gesture toward client -->
+  <rect x="108" y="162" width="38" height="16" rx="8" fill="#1B3A5C" transform="rotate(25 127 170)"/>
+  <ellipse cx="108" cy="186" rx="13" ry="9" fill="#C68642"/>
+  <!-- Other arm toward client -->
+  <rect x="246" y="168" width="60" height="14" rx="7" fill="#1B3A5C" transform="rotate(-8 276 175)"/>
+  <ellipse cx="304" cy="168" rx="13" ry="9" fill="#C68642"/>
+
+  <!-- YOUNG PERSON sitting right -->
+  <!-- Lower body -->
+  <rect x="450" y="243" width="38" height="28" rx="8" fill="#2A5483"/>
+  <rect x="448" y="268" width="26" height="45" rx="13" fill="#2A5483"/>
+  <rect x="480" y="268" width="26" height="45" rx="13" fill="#2A5483"/>
+  <ellipse cx="461" cy="312" rx="18" ry="8" fill="#1a2a44"/>
+  <ellipse cx="493" cy="312" rx="18" ry="8" fill="#1a2a44"/>
+  <!-- Upper body -->
+  <rect x="438" y="155" width="100" height="95" rx="16" fill="#2A5483"/>
+  <path d="M 438 178 Q 488 173 538 178" stroke="#3A6A9A" stroke-width="2" fill="none"/>
+  <!-- Head -->
+  <circle cx="488" cy="132" r="30" fill="#8B5E3C"/>
+  <!-- Hair -->
+  <ellipse cx="488" cy="106" rx="30" ry="12" fill="#1a0800"/>
+  <rect x="458" y="106" width="60" height="14" rx="7" fill="#1a0800"/>
+  <!-- Face -->
+  <circle cx="479" cy="132" r="3" fill="#6B3A1F"/>
+  <circle cx="497" cy="132" r="3" fill="#6B3A1F"/>
+  <path d="M 478 144 Q 488 151 498 144" stroke="#6B3A1F" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- Arms relaxed on couch -->
+  <rect x="406" y="172" width="36" height="13" rx="6.5" fill="#2A5483" transform="rotate(-12 424 178)"/>
+  <ellipse cx="410" cy="192" rx="12" ry="8" fill="#8B5E3C"/>
+  <rect x="536" y="172" width="36" height="13" rx="6.5" fill="#2A5483" transform="rotate(10 554 178)"/>
+  <ellipse cx="568" cy="186" rx="12" ry="8" fill="#8B5E3C"/>
+
+  <!-- Speech bubbles / conversation indicator -->
+  <ellipse cx="345" cy="145" rx="35" ry="22" fill="#F4A829" opacity="0.1" stroke="#F4A829" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="345" y="152" text-anchor="middle" font-size="18">💬</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="370" width="700" height="50" fill="#0A1228" opacity="0.8"/>
+  <text x="350" y="392" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-size="14" fill="#B8D4E8">Ik kom naar jou toe — thuis, vertrouwd en persoonlijk</text>
+  <text x="350" y="410" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-size="12" fill="#F4A829">GRIP Begeleiding · 079 720 05 20</text>
+</svg>
