@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Autismebegeleiding Zoetermeer – GRIP Begeleiding</title>
-<meta name="description" content="Gespecialiseerde ambulante begeleiding voor jongeren en jongvolwassenen met autisme (ASS) in Zoetermeer, Den Haag, Delft en Rijswijk. SKJ-geregistreerd, wachttijd 1–2 weken."/>
+<meta name="description" content="Gespecialiseerde ambulante begeleiding voor kinderen, jongeren en jongvolwassenen (10–30 jaar) met autisme (ASS) in Zoetermeer en omgeving. SKJ-geregistreerd, wachttijd 1–2 weken."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
 <style>
@@ -94,7 +94,15 @@ footer{background:var(--deep);padding:48px 5vw 28px}
 .fbot p,.fbot a{font-size:12px;color:var(--sm);text-decoration:none}.fbot a:hover{color:var(--amber)}
 @media(max-width:900px){.nlinks{display:none}.fgrid{grid-template-columns:1fr 1fr}.ctas{padding:28px 24px}section{padding:72px 5vw}.twocol{grid-template-columns:1fr;gap:40px}}
 @media(max-width:600px){.fgrid{grid-template-columns:1fr}.fr{grid-template-columns:1fr}section{padding:56px 5vw}}
-.aanbod{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+
+.hero-img-wrap{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:16/9;margin-bottom:48px}
+.hero-img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(10,20,40,.75))}
+.hero-img-cap{position:absolute;bottom:18px;left:18px;right:18px;z-index:2}
+.hero-img-cap h2{font-size:22px;font-weight:900;color:var(--white);letter-spacing:-.3px;margin-bottom:4px}
+.hero-img-cap p{font-size:14px;color:var(--sm)}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.aanbod{display:flex;flex-direction:column;gap:10px}
 .aitem{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:var(--white);border:.5px solid var(--border);border-radius:12px;transition:all .2s}
 .aitem:hover{border-color:var(--amber);background:var(--bg)}
 .aico{width:36px;height:36px;border-radius:10px;background:var(--al);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
@@ -104,14 +112,23 @@ footer{background:var(--deep);padding:48px 5vw 28px}
 .sig{padding:13px 15px;background:var(--bg);border:.5px solid var(--border);border-radius:12px}
 .sig p{font-size:13px;color:var(--navy);font-weight:600;margin-bottom:3px}
 .sig span{font-size:12px;color:var(--muted);line-height:1.5}
+.leeftijd-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.lft{background:var(--bg);border:.5px solid var(--border);border-radius:14px;padding:20px 18px}
+.lft.ac{background:rgba(244,168,41,.07);border-color:rgba(244,168,41,.3)}
+.lft p.lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:8px}
+.lft h3{font-size:15px;font-weight:800;color:var(--navy);margin-bottom:5px}
+.lft p.desc{font-size:13px;color:var(--muted);line-height:1.6}
 .fin-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
 .fin{background:var(--bg);border:.5px solid var(--border);border-radius:14px;padding:20px 18px}
 .fin.ft{background:rgba(244,168,41,.07);border-color:rgba(244,168,41,.3)}
-.fin p.lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:8px}
+.fin p.lbl2{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:8px}
 .fin h3{font-size:16px;font-weight:800;color:var(--navy);margin-bottom:6px}
 .fin p.desc{font-size:13px;color:var(--muted);line-height:1.6}
-@media(max-width:900px){.twocol{grid-template-columns:1fr;gap:40px}.sig-grid{grid-template-columns:1fr}.fin-row{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.fin-row{grid-template-columns:1fr}}
+.ctas{background:var(--navy);border-radius:20px;padding:40px 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:52px}
+.ctas h3{font-size:22px;font-weight:900;color:var(--white);letter-spacing:-.5px;max-width:440px;line-height:1.2}
+.ctas h3 em{font-style:italic;font-family:'Lora',serif;font-weight:400;color:var(--amber)}
+@media(max-width:900px){.twocol{grid-template-columns:1fr;gap:40px}.sig-grid,.leeftijd-grid,.fin-row{grid-template-columns:1fr 1fr}.ctas{padding:28px 24px}}
+@media(max-width:600px){.sig-grid,.leeftijd-grid,.fin-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -123,50 +140,74 @@ footer{background:var(--deep);padding:48px 5vw 28px}
 <div class="phero" style="background:linear-gradient(160deg,#0A2818 0%,#1B3A5C 100%)">
   <div class="phi">
     <div class="bc"><a href="index.html">Home</a><span>›</span><span>Autismebegeleiding</span></div>
-    <h1>🧩 Begeleiding die aansluit<br><em>op jouw spectrum</em></h1>
-    <p class="phero-sub">Gespecialiseerde ambulante begeleiding voor jongeren en jongvolwassenen met ASS in Zoetermeer en omgeving. Wij passen ons aan op jou — niet andersom.</p>
+    <h1>🧩 Autisme begrijpen<br><em>is de helft van het werk</em></h1>
+    <p class="phero-sub">Gespecialiseerde ambulante begeleiding voor kinderen, jongeren en jongvolwassenen (10–30 jaar) met ASS in Zoetermeer en omgeving. Wij kennen de doelgroep van binnen — en dat merk je.</p>
     <div class="hpills">
       <div class="hpill">✓ SKJ-geregistreerd</div>
+      <div class="hpill">🧒 Vanaf 10 jaar</div>
       <div class="hpill">⚡ Wachttijd 1–2 weken</div>
-      <div class="hpill">🏠 Begeleiding bij jou thuis</div>
-      <div class="hpill">📅 Ook avond &amp; zaterdag</div>
+      <div class="hpill">🏠 Altijd bij jou thuis</div>
     </div>
   </div>
 </div>
 
 <section>
   <div class="si">
+    <div class="hero-img-wrap">
+      <img src="img-begeleiding-thuis.jpg" alt="Begeleider helpt kind met huiswerk aan keukentafel" loading="lazy"/>
+      <div class="hero-img-cap">
+        <h2>Begeleiding in jouw vertrouwde omgeving</h2>
+        <p>Thuis, aan de keukentafel — precies waar het hoort</p>
+      </div>
+    </div>
+
     <div class="twocol">
-      <div class="prose">
+      <div>
         <span class="lbl">Onze aanpak</span>
-        <h2 class="ttl">Autisme is geen probleem.<br><em>Het is een andere manier.</em></h2>
-        <p>Autisme is geen probleem dat opgelost moet worden — het is een andere manier van de wereld waarnemen. Onze rol is niet om jou aan te passen aan de wereld, maar om jou te helpen de wereld op jouw manier te navigeren.</p>
-        <p>Wij werken <strong>ambulant</strong> — thuis bij jou, op school of op een plek die voor jou vertrouwd voelt. Rust en vertrouwen staan centraal.</p>
-        <div class="qb"><p>"Wij passen onze communicatie, structuur en aanpak aan op jou — niet andersom."</p><cite>— GRIP Begeleiding · Zoetermeer</cite></div>
-        <h3>Herken jij dit?</h3>
+        <h2 class="ttl">Autisme is geen probleem.<br><em>Het is een andere manier van zijn.</em></h2>
+        <div style="font-size:15px;line-height:1.8;color:#3A5068">
+          <p style="margin-bottom:14px">Onze begeleiders weten dat autisme niet iets is dat "opgelost" moet worden. Het is een andere manier van de wereld ervaren — met prachtige kanten én met echte uitdagingen. Onze taak is niet om jou aan te passen aan de wereld, maar om jou de tools te geven om er zelf in te navigeren.</p>
+          <p style="margin-bottom:14px">We beginnen altijd met luisteren. Wat heeft <em>jij</em> nodig? Welke structuur past bij jou? Waar loop jij op vast — en wat gaat juist goed? Vanuit dat beeld bouwen wij de begeleiding op.</p>
+          <p style="margin-bottom:14px">Voor kinderen vanaf 10 jaar is vroeg ingrijpen cruciaal. De overgang van basisschool naar voortgezet onderwijs is een van de zwaarste perioden voor kinderen met autisme. Wij zijn er precies dan.</p>
+        </div>
+        <div style="background:var(--navy);border-radius:16px;padding:22px 26px;margin:20px 0">
+          <p style="font-family:'Lora',serif;font-style:italic;font-size:17px;color:var(--sky);line-height:1.6;margin:0">"Wij passen onze communicatie, ons tempo en onze aanpak aan op jou — niet andersom."</p>
+          <cite style="font-family:'DM Sans',sans-serif;font-style:normal;font-size:11px;color:var(--amber);font-weight:600;letter-spacing:1px;display:block;margin-top:8px">— GRIP Begeleiding · Zoetermeer</cite>
+        </div>
+
+        <h3 style="font-size:17px;font-weight:800;color:var(--navy);margin:22px 0 10px">Herken jij dit?</h3>
         <div class="sig-grid">
-          <div class="sig"><p>Dagstructuur</p><span>Moeite met een vaste routine opbouwen en vasthouden</span></div>
-          <div class="sig"><p>Prikkels</p><span>Overprikkeling thuis, op school of in sociale situaties</span></div>
-          <div class="sig"><p>Sociale situaties</p><span>Contacten onderhouden of begrijpen wat anderen bedoelen</span></div>
-          <div class="sig"><p>Zelfstandigheid</p><span>Post, financiën en instanties — het overzicht kwijtraken</span></div>
-          <div class="sig"><p>School of werk</p><span>Vastlopen op het MBO of niet kunnen starten met werk</span></div>
-          <div class="sig"><p>Overgang 18+</p><span>De stap naar volwassenheid voelt overweldigend</span></div>
+          <div class="sig"><p>Overprikkeling</p><span>Thuis, in de klas of op sociale situaties volledig leegraken</span></div>
+          <div class="sig"><p>Dagstructuur</p><span>Zonder vast ritme volledig vastlopen — ook in de vakanties</span></div>
+          <div class="sig"><p>Sociale situaties</p><span>Niet begrijpen wat anderen bedoelen of hoe je moet reageren</span></div>
+          <div class="sig"><p>Schoolovergang</p><span>PO naar VO: plots veel meer eisen, veel meer mensen, veel minder structuur</span></div>
+          <div class="sig"><p>Zelfstandigheid</p><span>Post, financiën en instanties — het overzicht kwijtraken na je 18e</span></div>
+          <div class="sig"><p>Werk of MBO</p><span>Vastlopen op de werkvloer of op het MBO door prikkels of sociale druk</span></div>
         </div>
       </div>
+
       <div>
-        <span class="lbl">Wat wij bieden</span>
-        <h2 class="ttl" style="font-size:clamp(20px,2.5vw,28px)">Concreet aanbod</h2>
+        <span class="lbl">Concreet aanbod</span>
+        <h2 class="ttl" style="font-size:clamp(20px,2.5vw,28px)">Wat wij doen</h2>
         <div class="aanbod">
-          <div class="aitem"><div class="aico">📅</div><div><strong>Dagstructuur &amp; weekplanning</strong><span>Samen een haalbaar ritme opbouwen dat bij jou past</span></div></div>
-          <div class="aitem"><div class="aico">🧘</div><div><strong>Prikkelmanagement</strong><span>Inzicht in jouw prikkels en strategieën om overprikkeling te voorkomen</span></div></div>
+          <div class="aitem"><div class="aico">📅</div><div><strong>Dagstructuur en weekplanning</strong><span>Een haalbaar ritme opbouwen dat past bij jouw spectrum</span></div></div>
+          <div class="aitem"><div class="aico">🧘</div><div><strong>Prikkelmanagement</strong><span>Inzicht in triggers en strategieën om overprikkeling te beperken</span></div></div>
           <div class="aitem"><div class="aico">🗣️</div><div><strong>Sociale situaties oefenen</strong><span>Gesprekstechnieken, grenzen stellen, begrijpen wat anderen bedoelen</span></div></div>
-          <div class="aitem"><div class="aico">🏛️</div><div><strong>Meegaan naar instanties</strong><span>Gemeente, UWV, zorgverzekering, school — wij gaan gewoon mee</span></div></div>
-          <div class="aitem"><div class="aico">🏠</div><div><strong>Zelfstandig wonen</strong><span>Post, huishouden, financiën — stap voor stap regelen</span></div></div>
-          <div class="aitem"><div class="aico">📚</div><div><strong>School &amp; MBO-begeleiding</strong><span>Ondersteuning op school of bij de overgang naar werk of dagbesteding</span></div></div>
-          <div class="aitem"><div class="aico">👨‍👩‍👧</div><div><strong>Afstemming met gezin</strong><span>Samenwerken met ouders of mantelzorgers wanneer dat behulpzaam is</span></div></div>
+          <div class="aitem"><div class="aico">🏫</div><div><strong>Schoolondersteuning (PO, VO, MBO)</strong><span>Afstemming met school, begeleiding bij huiswerk en taakoverzicht</span></div></div>
+          <div class="aitem"><div class="aico">🏛️</div><div><strong>Meegaan naar instanties</strong><span>Gemeente, UWV, zorgverzekering — wij lopen gewoon mee</span></div></div>
+          <div class="aitem"><div class="aico">🏠</div><div><strong>Zelfstandig wonen</strong><span>Post, huishouden en financiën voor jongvolwassenen na hun 18e</span></div></div>
+          <div class="aitem"><div class="aico">👨‍👩‍👧</div><div><strong>Ouder- en gezinsafstemming</strong><span>Structureel overleg met ouders en gezinsleden — altijd met toestemming</span></div></div>
         </div>
       </div>
     </div>
+
+    <h3 style="font-size:20px;font-weight:800;color:var(--navy);margin:52px 0 14px">Per leeftijdsgroep</h3>
+    <div class="leeftijd-grid">
+      <div class="lft"><p class="lbl">Kinderen 10–12</p><h3>Vroeg ingrijpen</h3><p class="desc">De overgang PO→VO is een kritiek moment. Wij bouwen structuur en zelfvertrouwen op voordat de druk toeneemt.</p></div>
+      <div class="lft ac"><p class="lbl">Jongeren 12–18</p><h3>Steun op school</h3><p class="desc">VO, MBO en dagbesteding. Afstemming met school, huiswerkbegeleiding en sociale vaardigheden.</p></div>
+      <div class="lft"><p class="lbl">Jongvolwassenen 18–30</p><h3>Zelfstandig worden</h3><p class="desc">Zelfstandig wonen, werk, instanties. De overgang naar volwassenheid met concrete begeleiding op maat.</p></div>
+    </div>
+
     <div class="ctas"><h3>Wil je weten of wij bij jou passen?<br><em>Eerste kennismaking is altijd gratis.</em></h3><a href="contact.html" class="btn btn-a">Neem contact op →</a></div>
   </div>
 </section>
@@ -174,12 +215,12 @@ footer{background:var(--deep);padding:48px 5vw 28px}
 <section class="bg">
   <div class="si">
     <span class="lbl">Financiering</span>
-    <h2 class="ttl">Hoe wordt begeleiding bekostigd?</h2>
-    <p class="sub">Autismebegeleiding via GRIP kan worden bekostigd via Wmo, PGB of Jeugdwet. Wij helpen je graag bij de aanvraag — neem contact op voor meer informatie.</p>
+    <h2 class="ttl">Hoe wordt autismebegeleiding bekostigd?</h2>
+    <p class="sub">Via Wmo, PGB of Jeugdwet — wij helpen bij de aanvraag en denken mee over de snelste route. Neem contact op voor meer informatie.</p>
     <div class="fin-row">
-      <div class="fin"><p class="lbl">Wmo-indicatie</p><h3>Via gemeente</h3><p class="desc">Beschikking van de gemeente Zoetermeer of omgeving. De gemeente betaalt rechtstreeks — jij betaalt niets.</p></div>
-      <div class="fin ft"><p class="lbl">PGB ⚡ Snelste route</p><h3>Persoonsgebonden budget</h3><p class="desc">Al een PGB? Dan kunnen we direct starten via SVB-trekkingsrecht. Wij helpen bij de zorgovereenkomst.</p></div>
-      <div class="fin"><p class="lbl">Jeugdwet</p><h3>Via jeugdteam</h3><p class="desc">Verwijzing via het jeugdteam of wijkteam voor jongeren tot 18 jaar, verlengbaar tot 23.</p></div>
+      <div class="fin"><p class="lbl2">Wmo-indicatie</p><h3>Via gemeente</h3><p class="desc">Beschikking van de gemeente. De gemeente betaalt — u betaalt niets.</p></div>
+      <div class="fin ft"><p class="lbl2">PGB ⚡ Snelste route</p><h3>Persoonsgebonden budget</h3><p class="desc">Al een PGB? Dan starten we direct via SVB-trekkingsrecht.</p></div>
+      <div class="fin"><p class="lbl2">Jeugdwet</p><h3>Via jeugdteam</h3><p class="desc">Voor jongeren tot 18 jaar via jeugdteam of wijkteam. Verlengbaar tot 23.</p></div>
     </div>
   </div>
 </section>
@@ -187,7 +228,7 @@ footer{background:var(--deep);padding:48px 5vw 28px}
 <footer>
   <div class="fi">
     <div class="fgrid">
-      <div><div class="flogo"><div class="flm"><svg viewBox="0 0 24 24" fill="none"><path d="M18 12A6 6 0 1 0 12 18" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/><line x1="12" y1="12" x2="18" y2="12" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/><line x1="18" y1="12" x2="18" y2="16" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/></svg></div><div class="fln"><strong>GRIP</strong><small>Begeleiding</small></div></div><p class="fdesc">Ambulante begeleiding voor jongeren en jongvolwassenen met autisme en LVB in Zoetermeer en omgeving.</p><p style="font-size:12px;color:var(--sm);margin-top:12px">KvK 76801284 · Zoetermeer</p></div>
+      <div><div class="flogo"><div class="flm"><svg viewBox="0 0 24 24" fill="none"><path d="M18 12A6 6 0 1 0 12 18" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/><line x1="12" y1="12" x2="18" y2="12" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/><line x1="18" y1="12" x2="18" y2="16" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/></svg></div><div class="fln"><strong>GRIP</strong><small>Begeleiding</small></div></div><p class="fdesc">Ambulante begeleiding voor kinderen, jongeren en jongvolwassenen met autisme en LVB in regio Haaglanden.</p><p style="font-size:12px;color:var(--sm);margin-top:12px">KvK 76801284 · Zoetermeer</p></div>
       <div class="fcol"><h4>Begeleiding</h4><ul><li><a href="autisme-begeleiding.html">Autismebegeleiding</a></li><li><a href="lvb-begeleiding.html">LVB-ondersteuning</a></li><li><a href="scholen-werkgevers.html">Scholen &amp; werkgevers</a></li><li><a href="voor-verwijzers.html">Voor verwijzers</a></li></ul></div>
       <div class="fcol"><h4>Organisatie</h4><ul><li><a href="over-ons.html">Over ons</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacybeleid.html">Privacybeleid</a></li></ul></div>
       <div class="fcol"><h4>Contact</h4><ul><li><a href="tel:+31797200520">079 720 05 20</a></li><li><a href="mailto:info@gripbegeleiding.nl">info@gripbegeleiding.nl</a></li><li><a href="https://wa.me/31797200520">WhatsApp</a></li></ul><p style="font-size:11px;color:var(--sm);margin-top:14px">Ma–za · 08:00–20:00</p></div>
