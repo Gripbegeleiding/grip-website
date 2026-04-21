@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Werken bij GRIP Begeleiding – Ambulante coaches gezocht</title>
+<meta name="description" content="Word ambulant coach bij GRIP Begeleiding in Zoetermeer en omgeving. Gespecialiseerd in autisme en LVB, 10–30 jaar. Upload je CV en solliciteer direct."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1B3A5C;--deep:#122842;--amber:#F4A829;--al:#FDE8B5;--sky:#E8F4FD;--sm:#B8D4E8;--white:#fff;--text:#1A2A3A;--muted:#5A7A9A;--border:#D4E6F3;--bg:#F5FAFF}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:68px}
+.nlogo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nicon{width:40px;height:40px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.nicon svg{width:24px;height:24px}
+.ntext strong{font-size:20px;font-weight:900;letter-spacing:-.5px;color:var(--navy);display:block;line-height:1}
+.ntext span{font-size:9px;letter-spacing:2.5px;color:var(--muted);font-weight:500;text-transform:uppercase;margin-top:1px;display:block}
+.nlinks{display:flex;align-items:center;gap:4px;list-style:none}
+.nlinks a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;padding:8px 13px;border-radius:8px;transition:all .2s}
+.nlinks a:hover,.nlinks a.active{color:var(--navy);background:var(--sky)}
+.ncta{background:var(--navy)!important;color:var(--white)!important;border-radius:10px!important;font-weight:700!important}
+section{padding:88px 5vw}
+.si{max-width:1080px;margin:0 auto}
+.lbl{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--amber);margin-bottom:12px;display:block}
+.ttl{font-size:clamp(26px,3.6vw,40px);font-weight:900;letter-spacing:-1px;color:var(--navy);margin-bottom:14px;line-height:1.1}
+.ttl em{font-style:italic;font-family:'Lora',serif;font-weight:400}
+.sub{font-size:16px;color:var(--muted);line-height:1.75;max-width:560px}
+.bg{background:var(--bg)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;text-decoration:none;border:none;cursor:pointer;transition:all .2s}
+.btn-a{background:var(--amber);color:var(--deep)}.btn-a:hover{background:#E89A20;transform:translateY(-1px)}
+
+/* HERO */
+.phero{background:var(--navy);padding:136px 5vw 80px;position:relative;overflow:hidden}
+.phero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 40%,rgba(244,168,41,.1),transparent 50%);pointer-events:none}
+.phi{max-width:1080px;margin:0 auto;position:relative;z-index:2}
+.bc{display:flex;align-items:center;gap:8px;margin-bottom:16px}
+.bc a{color:var(--sm);font-size:13px;text-decoration:none}.bc a:hover{color:var(--amber)}
+.bc span{color:rgba(255,255,255,.25);font-size:13px}
+.phero h1{font-size:clamp(30px,4.2vw,48px);font-weight:900;color:var(--white);letter-spacing:-1.5px;line-height:1.05;margin-bottom:14px}
+.phero h1 em{font-style:italic;font-family:'Lora',serif;font-weight:400;color:var(--amber)}
+.phero-sub{font-size:17px;color:var(--sm);line-height:1.65;max-width:580px;margin-bottom:24px}
+.hpills{display:flex;gap:10px;flex-wrap:wrap}
+.hpill{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.08);border:.5px solid rgba(255,255,255,.15);border-radius:20px;padding:6px 13px;font-size:13px;color:var(--sm);font-weight:500}
+
+/* VOORDELEN */
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.vcard{padding:24px 20px;background:var(--white);border:.5px solid var(--border);border-radius:16px;transition:all .2s}
+.vcard:hover{border-color:var(--amber);box-shadow:0 6px 24px rgba(27,58,92,.08);transform:translateY(-2px)}
+.vico{font-size:28px;margin-bottom:12px}
+.vcard h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.vcard p{font-size:13px;color:var(--muted);line-height:1.65}
+
+/* PROFIEL CARDS */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.pcard{background:var(--bg);border:.5px solid var(--border);border-radius:18px;padding:26px 22px;transition:all .2s}
+.pcard:hover{border-color:var(--amber);box-shadow:0 6px 24px rgba(27,58,92,.08)}
+.ptag{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:10px;display:block}
+.pcard h3{font-size:17px;font-weight:800;color:var(--navy);margin-bottom:10px}
+.pcard p{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:14px}
+.preqs{list-style:none;display:flex;flex-direction:column;gap:7px}
+.preqs li{font-size:13px;color:var(--text);display:flex;gap:8px;align-items:flex-start;line-height:1.4}
+.preqs li::before{content:'✓';color:var(--amber);font-weight:700;flex-shrink:0}
+
+/* SOLLICITATIEFORMULIER */
+.sform{background:var(--white);border:.5px solid var(--border);border-radius:22px;padding:36px;max-width:720px;margin:44px auto 0}
+.sform h3{font-size:22px;font-weight:800;color:var(--navy);margin-bottom:6px;letter-spacing:-.3px}
+.sform p.sub2{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+.fg{margin-bottom:14px}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--navy);margin-bottom:5px}
+.fg input,.fg select,.fg textarea{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);background:var(--bg);outline:none;transition:border-color .2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--navy);background:var(--white)}
+.fg textarea{height:100px;resize:vertical}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+/* File upload */
+.file-upload{border:2px dashed var(--border);border-radius:12px;padding:28px;text-align:center;background:var(--bg);cursor:pointer;transition:all .2s;position:relative}
+.file-upload:hover{border-color:var(--amber);background:var(--al)}
+.file-upload input[type="file"]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.file-upload .fu-ico{font-size:36px;margin-bottom:10px}
+.file-upload h4{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.file-upload p{font-size:12px;color:var(--muted)}
+.file-name{font-size:12px;color:var(--navy);font-weight:600;margin-top:8px;display:none}
+.fsub{width:100%;padding:14px;background:var(--navy);color:var(--white);border:none;border-radius:11px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s;margin-top:8px}
+.fsub:hover{background:var(--deep)}
+.fok{display:none;background:#E8F5EE;border:1px solid #22A06B;border-radius:12px;padding:20px;text-align:center;margin-top:14px}
+.fok.show{display:block}
+.fok h4{color:#1A5C3A;font-size:16px;font-weight:700;margin-bottom:6px}
+.fok p{color:#3A7A5A;font-size:14px;line-height:1.5}
+.fprivacy{font-size:11px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.5}
+.fprivacy a{color:var(--navy);text-decoration:none}
+
+/* PROCESS */
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px;position:relative}
+.process::before{content:'';position:absolute;top:27px;left:8%;right:8%;height:2px;background:linear-gradient(to right,var(--amber),var(--border));z-index:0}
+.pstep{text-align:center;position:relative;z-index:1}
+.pnum{width:54px;height:54px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:var(--deep);margin:0 auto 14px;border:4px solid var(--white);box-shadow:0 3px 12px rgba(244,168,41,.3)}
+.pstep h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px}
+.pstep p{font-size:12px;color:var(--muted);line-height:1.5}
+
+footer{background:var(--deep);padding:48px 5vw 28px}
+.fi{max-width:1080px;margin:0 auto}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;padding-bottom:28px;border-bottom:.5px solid rgba(255,255,255,.08);margin-bottom:20px}
+.flogo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.flm{width:34px;height:34px;background:var(--amber);border-radius:9px;display:flex;align-items:center;justify-content:center}
+.flm svg{width:20px;height:20px}
+.fln strong{font-size:17px;font-weight:900;color:var(--white);letter-spacing:-.3px;display:block}
+.fln small{font-size:9px;letter-spacing:2.5px;color:var(--sm);text-transform:uppercase}
+.fdesc{font-size:13px;color:var(--sm);line-height:1.65;max-width:230px}
+.fcol h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--white);margin-bottom:14px}
+.fcol ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.fcol ul a{font-size:13px;color:var(--sm);text-decoration:none;transition:color .2s}
+.fcol ul a:hover{color:var(--amber)}
+.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.fbot p,.fbot a{font-size:12px;color:var(--sm);text-decoration:none}.fbot a:hover{color:var(--amber)}
+
+@media(max-width:900px){.vgrid,.pgrid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.process::before{display:none}.nlinks{display:none}.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.vgrid,.pgrid,.fgrid{grid-template-columns:1fr}.fr{grid-template-columns:1fr}section{padding:56px 5vw}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nlogo"><div class="nicon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 12A6 6 0 1 0 12 18" stroke="#F4A829" stroke-width="2.2" stroke-linecap="round"/><line x1="12" y1="12" x2="18" y2="12" stroke="#F4A829" stroke-width="2.2" stroke-linecap="round"/><line x1="18" y1="12" x2="18" y2="16" stroke="#F4A829" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="18" r="1.5" fill="#E8F4FD"/></svg></div><div class="ntext"><strong>GRIP</strong><span>Begeleiding</span></div></a>
+  <ul class="nlinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="over-ons.html">Over ons</a></li>
+    <li><a href="autisme-begeleiding.html">Autisme</a></li>
+    <li><a href="lvb-begeleiding.html">LVB</a></li>
+    <li><a href="voor-verwijzers.html">Voor verwijzers</a></li>
+    <li><a href="scholen-werkgevers.html">Scholen &amp; werkgevers</a></li>
+    <li><a href="werken-bij.html" class="active">Werken bij</a></li>
+    <li><a href="contact.html" class="ncta">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="phero">
+  <div class="phi">
+    <div class="bc"><a href="index.html">Home</a><span>›</span><span>Werken bij</span></div>
+    <h1>Maak het verschil<br><em>als ambulant coach</em></h1>
+    <p class="phero-sub">GRIP Begeleiding groeit naar een regionaal netwerk van gekwalificeerde ambulante coaches in Zoetermeer en omgeving. Jij werkt met cliënten — wij regelen de infrastructuur.</p>
+    <div class="hpills">
+      <div class="hpill">📍 Zoetermeer en omgeving</div>
+      <div class="hpill">🧩 ASS &amp; LVB specialist</div>
+      <div class="hpill">✅ SKJ vereist</div>
+      <div class="hpill">💼 ZZP of loondienst</div>
+    </div>
+  </div>
+</div>
+
+<!-- VOORDELEN -->
+<section>
+  <div class="si">
+    <span class="lbl">Waarom GRIP</span>
+    <h2 class="ttl">Werken bij een organisatie<br><em>die anders is</em></h2>
+    <p class="sub">Wij zijn geen grote instelling met eindeloze procedures. Wij zijn een groeiende organisatie die kwaliteit en persoonlijk contact vooropstelt.</p>
+    <div class="vgrid">
+      <div class="vcard"><div class="vico">🤝</div><h3>Eigen cliënten, eigen aanpak</h3><p>Jij werkt 1-op-1 met jouw vaste cliënten. Je bepaalt je eigen werkwijze binnen de kwaliteitskaders van GRIP.</p></div>
+      <div class="vcard"><div class="vico">📍</div><h3>Werk in jouw buurt</h3><p>Wij koppelen jou aan cliënten in jouw eigen regio. Korte reistijden, lokale kennis, vertrouwde omgeving.</p></div>
+      <div class="vcard"><div class="vico">⚡</div><h3>Snel aan de slag</h3><p>Geen lange procedures. Na goedkeuring van je profiel en kwalificaties kun je snel starten met je eerste cliënt.</p></div>
+      <div class="vcard"><div class="vico">🛡️</div><h3>Kwaliteitsborging geregeld</h3><p>GRIP regelt de kwaliteitsstructuur, intervisie en afstemming. Jij focust op de begeleiding.</p></div>
+      <div class="vcard"><div class="vico">💰</div><h3>Eerlijk tarief</h3><p>Transparante vergoedingsafspraken, op tijd uitbetaald. Geen verrassingen achteraf.</p></div>
+      <div class="vcard"><div class="vico">📈</div><h3>Groeien samen</h3><p>GRIP groeit — en jij groeit mee. Meer cliënten, meer regio's, meer mogelijkheden naarmate het netwerk uitbreidt.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFIELEN -->
+<section class="bg">
+  <div class="si">
+    <span class="lbl">Wie zoeken wij?</span>
+    <h2 class="ttl">Drie coachprofielen<br><em>die wij zoeken</em></h2>
+    <p class="sub">We zijn op zoek naar coaches die zich herkennen in één van deze profielen. Combinaties zijn ook welkom.</p>
+    <div class="pgrid">
+      <div class="pcard">
+        <span class="ptag">Profiel 1</span>
+        <h3>🏫 De schoolcoach</h3>
+        <p>Sterk in schoolomgeving, mentorcontact en schoolmotivatie. Begeleidt leerlingen op VO, MBO en bij de overgang naar werk of dagbesteding.</p>
+        <ul class="preqs">
+          <li>Ervaring met VO/MBO en schoolverzuim</li>
+          <li>Affiniteit met autisme of LVB</li>
+          <li>Kan afstemmen met leerkrachten en zorgcoördinatoren</li>
+          <li>SKJ-geregistreerd of gelijkwaardig</li>
+        </ul>
+      </div>
+      <div class="pcard">
+        <span class="ptag">Profiel 2</span>
+        <h3>🏠 De thuis- en zelfredzaamheidscoach</h3>
+        <p>Sterk in praktische ondersteuning bij zelfstandig wonen, ADL, administratie en instanties. Werkt veel met LVB-doelgroep en jongvolwassenen.</p>
+        <ul class="preqs">
+          <li>Ervaring met LVB en/of zelfstandig wonen</li>
+          <li>Praktisch ingesteld en geduldig</li>
+          <li>Bekend met gemeentelijke loketten en Wmo</li>
+          <li>SKJ of relevante zorgkwalificatie</li>
+        </ul>
+      </div>
+      <div class="pcard">
+        <span class="ptag">Profiel 3</span>
+        <h3>🌿 De activerende jongerencoach</h3>
+        <p>Sterk in aansluiten bij jongeren, buiten begeleiden, bewegen en ervaringsgericht werken. Wandelcoaching, bokstherapie of sport als werkvorm.</p>
+        <ul class="preqs">
+          <li>Affiniteit met autisme en/of LVB bij jongeren</li>
+          <li>Actieve begeleidingsstijl</li>
+          <li>Aantoonbare ervaring met ervaringsgericht werken</li>
+          <li>SKJ of gelijkwaardige kwalificatie</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EISEN -->
+<section>
+  <div class="si">
+    <span class="lbl">Vereisten</span>
+    <h2 class="ttl">Wat wij van coaches<br><em>verwachten</em></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:44px">
+      <div>
+        <h3 style="font-size:17px;font-weight:800;color:var(--navy);margin-bottom:16px">✅ Verplichte vereisten</h3>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:var(--bg);border:.5px solid var(--border);border-radius:12px">
+            <span style="font-size:20px;flex-shrink:0">✅</span>
+            <div><strong style="display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px">SKJ-geregistreerd of gelijkwaardig</strong><span style="font-size:12px;color:var(--muted)">Actieve registratie bij Stichting Kwaliteitsregister Jeugd of vergelijkbaar kwaliteitsregister</span></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:var(--bg);border:.5px solid var(--border);border-radius:12px">
+            <span style="font-size:20px;flex-shrink:0">🎓</span>
+            <div><strong style="display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px">HBO werk- en denkniveau</strong><span style="font-size:12px;color:var(--muted)">Social Work, Pedagogiek, Psychologie of vergelijkbare relevante opleiding</span></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:var(--bg);border:.5px solid var(--border);border-radius:12px">
+            <span style="font-size:20px;flex-shrink:0">🔒</span>
+            <div><strong style="display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px">Actueel VOG (profiel 45 + 84 + 85)</strong><span style="font-size:12px;color:var(--muted)">Verklaring omtrent gedrag voor zorg voor kwetsbare personen, niet ouder dan 6 maanden</span></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:var(--bg);border:.5px solid var(--border);border-radius:12px">
+            <span style="font-size:20px;flex-shrink:0">🧩</span>
+            <div><strong style="display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px">Aantoonbare ASS en/of LVB ervaring</strong><span style="font-size:12px;color:var(--muted)">Minimaal 1 jaar praktijkervaring met de doelgroep</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:17px;font-weight:800;color:var(--navy);margin-bottom:16px">⭐ Wat ons blij maakt</h3>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:rgba(244,168,41,.06);border:.5px solid rgba(244,168,41,.2);border-radius:12px">
+            <span style="font-size:20px;flex-shrink:0">🌿</span>
+            <div><strong style="display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px">Wandelcoaching of ervaringsgericht werken</strong><span style="font-size:12px;color:var(--muted)">Ervaring met bewegen als begeleidingsvorm</span></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:rgba(244,168,41,.06);border:.5px solid rgba(244,168,41,.2);border-radius:12px">
+            <span style="font-size:20px;flex-shrink:0">🥊</span>
+            <div><strong style="display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px">Bokstherapie of PMT achtergrond</strong><span style="font-size:12px;color:var(--muted)">Opleiding of ervaring in psychomotorische therapie</span></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:rgba(244,168,41,.06);border:.5px solid rgba(244,168,41,.2);border-radius:12px">
+            <span style="font-size:20px;flex-shrink:0">🌍</span>
+            <div><strong style="display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px">Meertalig of cultuursensitief</strong><span style="font-size:12px;color:var(--muted)">Regio Haaglanden is divers — cultuurgevoeligheid is een grote plus</span></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:rgba(244,168,41,.06);border:.5px solid rgba(244,168,41,.2);border-radius:12px">
+            <span style="font-size:20px;flex-shrink:0">🏫</span>
+            <div><strong style="display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px">Schoolachtergrond of onderwijservaring</strong><span style="font-size:12px;color:var(--muted)">Ervaring in het onderwijs is direct toepasbaar in onze schoolcoaching</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLLICITATIEPROCEDURE -->
+<section class="bg">
+  <div class="si">
+    <span class="lbl">Sollicitatieprocedure</span>
+    <h2 class="ttl">Zo werkt het<br><em>sollicitatieproces</em></h2>
+    <div class="process">
+      <div class="pstep"><div class="pnum">1</div><h4>CV insturen</h4><p>Upload je CV en motivatie via het formulier hieronder</p></div>
+      <div class="pstep"><div class="pnum">2</div><h4>Eerste gesprek</h4><p>Telefonisch of op locatie — we leren elkaar kennen</p></div>
+      <div class="pstep"><div class="pnum">3</div><h4>Kwalificaties checken</h4><p>SKJ, VOG en diploma's worden geverifieerd</p></div>
+      <div class="pstep"><div class="pnum">4</div><h4>Eerste koppeling</h4><p>Jouw eerste cliënt — wij begeleiden de match</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLLICITATIEFORMULIER -->
+<section>
+  <div class="si">
+    <span class="lbl">Solliciteren</span>
+    <h2 class="ttl" style="text-align:center">Stuur je CV in</h2>
+    <p class="sub" style="text-align:center;margin:0 auto 0">Vul het formulier in en upload je CV. Wij reageren binnen 48 uur.</p>
+
+    <div class="sform">
+      <h3>Sollicitatieformulier</h3>
+      <p class="sub2">Vul je gegevens in en voeg je CV toe. Heb je nog geen actueel CV? Stuur dan een korte motivatie met je opleiding en werkervaring.</p>
+
+      <div class="fr">
+        <div class="fg"><label>Voornaam *</label><input type="text" id="fn" placeholder="Voornaam" required/></div>
+        <div class="fg"><label>Achternaam *</label><input type="text" id="ln" placeholder="Achternaam" required/></div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>E-mailadres *</label><input type="email" id="em" placeholder="jouw@email.nl" required/></div>
+        <div class="fg"><label>Telefoonnummer *</label><input type="tel" id="tel" placeholder="06 – …" required/></div>
+      </div>
+      <div class="fg">
+        <label>Woonplaats / gemeente</label>
+        <input type="text" placeholder="bijv. Zoetermeer, Den Haag, Leiden…"/>
+      </div>
+      <div class="fg">
+        <label>Coachprofiel waar je je in herkent</label>
+        <select>
+          <option>Schoolcoach (VO/MBO/dagbesteding)</option>
+          <option>Thuis- en zelfredzaamheidscoach (LVB/wonen/ADL)</option>
+          <option>Activerende jongerencoach (bewegen/ervaringsgericht)</option>
+          <option>Combinatie van meerdere profielen</option>
+          <option>Anders</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Huidige situatie</label>
+        <select>
+          <option>ZZP'er in de zorg — actief</option>
+          <option>ZZP'er — wil meer cliënten/uren</option>
+          <option>In loondienst — oriëntend op ZZP</option>
+          <option>Op zoek naar loondienst</option>
+          <option>Anders</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>SKJ-registratienummer (indien beschikbaar)</label>
+        <input type="text" placeholder="bijv. 160XXXXXX"/>
+      </div>
+      <div class="fg">
+        <label>Korte motivatie *</label>
+        <textarea placeholder="Waarom wil je bij GRIP werken? Wat is je ervaring met autisme en/of LVB? Welke werkvormen gebruik je? (minimaal 3 zinnen)" id="mot" required></textarea>
+      </div>
+
+      <!-- CV UPLOAD -->
+      <div class="fg">
+        <label>CV uploaden (PDF of Word)</label>
+        <div class="file-upload" onclick="document.getElementById('cv').click()">
+          <input type="file" id="cv" accept=".pdf,.doc,.docx" style="display:none" onchange="showFile(this)"/>
+          <div class="fu-ico">📄</div>
+          <h4>Klik om je CV te uploaden</h4>
+          <p>PDF of Word · max. 10 MB</p>
+          <p class="file-name" id="fname"></p>
+        </div>
+      </div>
+
+      <button class="fsub" onclick="solSubmit()">Verstuur sollicitatie →</button>
+      <div class="fok" id="fok">
+        <h4>✓ Sollicitatie ontvangen!</h4>
+        <p>Bedankt voor je interesse in GRIP Begeleiding. Wij nemen binnen 48 uur contact met je op om een eerste kennismaking in te plannen.</p>
+      </div>
+      <p class="fprivacy">Je gegevens worden vertrouwelijk behandeld conform ons <a href="privacybeleid.html">privacybeleid</a>. Je CV wordt niet gedeeld met derden.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fi">
+    <div class="fgrid">
+      <div><div class="flogo"><div class="flm"><svg viewBox="0 0 24 24" fill="none"><path d="M18 12A6 6 0 1 0 12 18" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/><line x1="12" y1="12" x2="18" y2="12" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/><line x1="18" y1="12" x2="18" y2="16" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/></svg></div><div class="fln"><strong>GRIP</strong><small>Begeleiding</small></div></div><p class="fdesc">Ambulante begeleiding voor kinderen, jongeren en jongvolwassenen met autisme en LVB in Zoetermeer en omgeving.</p><p style="font-size:12px;color:var(--sm);margin-top:12px">KvK 76801284 · Zoetermeer</p></div>
+      <div class="fcol"><h4>Begeleiding</h4><ul><li><a href="autisme-begeleiding.html">Autismebegeleiding</a></li><li><a href="lvb-begeleiding.html">LVB-ondersteuning</a></li><li><a href="scholen-werkgevers.html">Scholen &amp; werkgevers</a></li><li><a href="voor-verwijzers.html">Voor verwijzers</a></li></ul></div>
+      <div class="fcol"><h4>Organisatie</h4><ul><li><a href="over-ons.html">Over ons</a></li><li><a href="werken-bij.html">Werken bij</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacybeleid.html">Privacybeleid</a></li></ul></div>
+      <div class="fcol"><h4>Contact</h4><ul><li><a href="tel:+31797200520">079 720 05 20</a></li><li><a href="mailto:info@gripbegeleiding.nl">info@gripbegeleiding.nl</a></li><li><a href="https://wa.me/31797200520">WhatsApp</a></li></ul><p style="font-size:11px;color:var(--sm);margin-top:14px">Ma–za · 08:00–20:00</p></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px;padding:16px 0;border-top:.5px solid rgba(255,255,255,.08);flex-wrap:wrap">
+      <p style="font-size:11px;color:var(--sm);font-weight:600;letter-spacing:1px;text-transform:uppercase">Aangesloten bij:</p>
+      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px"><svg width="28" height="28" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="48" fill="#1B5E8C"/><text x="50" y="44" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="28" fill="white">SKJ</text><text x="50" y="64" text-anchor="middle" font-family="Arial" font-size="11" fill="#B8D4E8">Kwaliteitsregister</text><text x="50" y="76" text-anchor="middle" font-family="Arial" font-size="11" fill="#B8D4E8">Jeugd</text></svg><div><p style="font-size:12px;font-weight:700;color:var(--white);margin:0">SKJ-geregistreerd</p><p style="font-size:10px;color:var(--sm);margin:0">160013906</p></div></div>
+      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px"><svg width="28" height="28" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="12" fill="#E8A020"/><text x="50" y="58" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="34" fill="white">KvK</text></svg><div><p style="font-size:12px;font-weight:700;color:var(--white);margin:0">KvK ingeschreven</p><p style="font-size:10px;color:var(--sm);margin:0">76801284</p></div></div>
+      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px"><svg width="28" height="28" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="12" fill="#2D7A3A"/><text x="50" y="58" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="28" fill="white">AGB</text></svg><div><p style="font-size:12px;font-weight:700;color:var(--white);margin:0">AGB-geregistreerd</p><p style="font-size:10px;color:var(--sm);margin:0">41521169</p></div></div>
+    </div>
+    <div class="fbot"><p>© 2026 GRIP Begeleiding · KvK 76801284 · AGB: 41521169 · Zoetermeer</p><div style="display:flex;gap:16px"><a href="privacybeleid.html">Privacybeleid</a></div></div>
+  </div>
+</footer>
+
+<script>
+function showFile(input){
+  const name = input.files[0]?.name;
+  if(name){
+    const el = document.getElementById('fname');
+    el.textContent = '✓ ' + name;
+    el.style.display = 'block';
+  }
+}
+function solSubmit(){
+  const fn = document.getElementById('fn').value;
+  const em = document.getElementById('em').value;
+  const mot = document.getElementById('mot').value;
+  if(!fn||!em||!mot){alert('Vul minimaal je naam, e-mail en motivatie in.');return;}
+  document.getElementById('fok').classList.add('show');
+  document.querySelector('.fsub').style.display='none';
+}
+</script>
+</body>
+</html>
