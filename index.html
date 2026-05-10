@@ -1,233 +1,328 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>GRIP Begeleiding – Ambulante begeleiding autisme &amp; LVB Zoetermeer</title>
-<meta name="description" content="GRIP Begeleiding biedt gespecialiseerde ambulante begeleiding voor kinderen, jongeren en jongvolwassenen (10–30 jaar) met autisme en LVB in Zoetermeer, Den Haag, Delft, Rijswijk, Leiden, Gouda, Alphen aan den Rijn en omgeving."/>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>GRIP Begeleiding — Ambulante begeleiding autisme &amp; LVB, Zoetermeer</title>
+<meta name="description" content="Gespecialiseerde ambulante begeleiding voor kinderen, jongeren en jongvolwassenen (10–30 jaar) met autisme of LVB. Snel beschikbaar in Zoetermeer en omgeving."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,900;1,9..144,300;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
+/* GRIP v3 — Design System */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--navy:#1B3A5C;--deep:#122842;--amber:#F4A829;--al:#FDE8B5;--sky:#E8F4FD;--sm:#B8D4E8;--white:#fff;--text:#1A2A3A;--muted:#5A7A9A;--border:#D4E6F3;--bg:#F5FAFF}
+:root{
+  --ink:#111827;--ink2:#374151;--ink3:#6B7280;
+  --line:#E5E7EB;--bg:#F9FAFB;--white:#FFFFFF;
+  --navy:#1C3D5A;--navy2:#0F2234;
+  --gold:#D97706;--gold-lt:#FEF3C7;
+  --sage:#064E3B;--sage-lt:#ECFDF5;
+  --r1:6px;--r2:12px;--r3:20px;--r4:28px;
+}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:68px}
-.nlogo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nicon{width:40px;height:40px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.nicon svg{width:24px;height:24px}
-.ntext strong{font-size:20px;font-weight:900;letter-spacing:-.5px;color:var(--navy);display:block;line-height:1}
-.ntext span{font-size:9px;letter-spacing:2.5px;color:var(--muted);font-weight:500;text-transform:uppercase;margin-top:1px;display:block}
-.nlinks{display:flex;align-items:center;gap:4px;list-style:none}
-.nlinks a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;padding:8px 13px;border-radius:8px;transition:all .2s}
-.nlinks a:hover,.nlinks a.active{color:var(--navy);background:var(--sky)}
-.ncta{background:var(--navy)!important;color:var(--white)!important;border-radius:10px!important;font-weight:700!important}
-section{padding:88px 5vw}
-.si{max-width:1080px;margin:0 auto}
-.lbl{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--amber);margin-bottom:12px;display:block}
-.ttl{font-size:clamp(26px,3.6vw,40px);font-weight:900;letter-spacing:-1px;color:var(--navy);margin-bottom:14px;line-height:1.1}
-.ttl em{font-style:italic;font-family:'Lora',serif;font-weight:400}
-.sub{font-size:16px;color:var(--muted);line-height:1.75;max-width:560px}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* Typography */
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;line-height:1.1;letter-spacing:-.02em}
+h1{font-size:clamp(34px,5vw,58px);font-weight:600}
+h2{font-size:clamp(26px,3.8vw,42px);font-weight:600}
+h3{font-size:clamp(18px,2.5vw,22px);font-weight:600}
+p{color:var(--ink2);line-height:1.78}
+em{font-style:italic;font-weight:300}
+
+.eyebrow{display:block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.lead{font-size:17px;color:var(--ink2);line-height:1.78;max-width:560px}
+
+/* Layout */
+.wrap{max-width:1080px;margin:0 auto;padding:0 6vw}
+section{padding:96px 0}
 .bg{background:var(--bg)}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;text-decoration:none;border:none;cursor:pointer;transition:all .2s}
-.btn-a{background:var(--amber);color:var(--deep)}.btn-a:hover{background:#E89A20;transform:translateY(-1px)}
-.btn-w{background:rgba(255,255,255,.08);color:var(--sm);border:.5px solid rgba(255,255,255,.2)}.btn-w:hover{background:rgba(255,255,255,.15)}
+.dark{background:var(--navy2)}
 
-/* HERO */
-.hero{min-height:100vh;background:var(--navy);display:flex;align-items:center;padding:120px 5vw 80px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 68% 38%,rgba(244,168,41,.12),transparent 52%);pointer-events:none}
-.hgrid{position:relative;z-index:2;max-width:1080px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.2fr 0.8fr;gap:56px;align-items:center}
-.hbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(244,168,41,.15);border:1px solid rgba(244,168,41,.3);border-radius:100px;padding:5px 14px 5px 8px;margin-bottom:20px}
-.hdot{width:8px;height:8px;background:var(--amber);border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.3)}}
-.hbadge span{font-size:12px;color:var(--amber);font-weight:600}
-.hero h1{font-size:clamp(32px,4.5vw,52px);font-weight:900;color:var(--white);line-height:1.05;letter-spacing:-1.5px;margin-bottom:16px}
-.hero h1 em{font-style:italic;font-family:'Lora',serif;font-weight:400;color:var(--amber)}
-.hsub{font-size:17px;color:var(--sm);line-height:1.65;margin-bottom:28px;max-width:460px}
-.hbtns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
-.htrust{display:flex;gap:10px;flex-wrap:wrap}
-.htp{background:rgba(255,255,255,.07);border:.5px solid rgba(255,255,255,.12);border-radius:20px;padding:5px 12px;font-size:12px;color:var(--sm);font-weight:500}
-.hcard{border-radius:22px;overflow:hidden;position:relative;aspect-ratio:4/5;background:var(--deep);max-width:360px;margin:0 auto}
-.hcard img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-.hcard::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(18,40,66,.95) 100%)}
-.hoverlay{position:absolute;bottom:0;left:0;right:0;padding:20px;z-index:2}
-.hname{font-size:15px;font-weight:800;color:var(--white)}
-.htitle{font-size:12px;color:var(--sm);margin-top:2px}
-.hbar{margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:space-between}
-.htel{color:var(--amber);font-weight:700;font-size:15px;text-decoration:none}
-.hwa{background:rgba(37,211,102,.15);border:.5px solid rgba(37,211,102,.3);color:#25D166;font-size:12px;font-weight:600;padding:6px 12px;border-radius:8px;text-decoration:none}
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:64px;display:flex;align-items:center;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);transition:box-shadow .2s}
+nav.up{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:0 6vw;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nlogo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nmark{width:34px;height:34px;background:var(--navy);border-radius:8px;display:grid;place-items:center;flex-shrink:0}
+.nmark svg{width:20px;height:20px}
+.nbrand{font-family:'Fraunces',serif;font-size:17px;font-weight:600;color:var(--navy);letter-spacing:-.02em;line-height:1;display:block}
+.nsub{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);display:block;margin-top:1px}
+.nlinks{display:flex;align-items:center;gap:2px;list-style:none}
+.nlinks a{color:var(--ink2);font-size:13.5px;font-weight:600;padding:6px 11px;border-radius:8px;text-decoration:none;transition:all .15s}
+.nlinks a:hover,.nlinks a.on{color:var(--navy);background:var(--bg)}
+.ncta{background:var(--navy)!important;color:#fff!important;border-radius:var(--r2)!important;padding:7px 17px!important}
+.ncta:hover{background:var(--navy2)!important}
+.nmob{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--ink)}
+.nmob svg{width:22px;height:22px}
 
-/* DOELGROEP STRIP */
-.dstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:16px;overflow:hidden;margin-top:48px}
-.ds{background:var(--white);padding:22px 20px;text-align:center;transition:all .2s}
-.ds:hover{background:var(--bg)}
-.ds-ico{font-size:28px;margin-bottom:8px}
-.ds-lbl{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px}
-.ds-sub{font-size:12px;color:var(--muted);line-height:1.5}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:14.5px;font-weight:700;border:none;cursor:pointer;text-decoration:none;border-radius:var(--r3);padding:13px 26px;transition:all .18s;letter-spacing:.01em}
+.btn-dark{background:var(--navy);color:#fff}.btn-dark:hover{background:var(--navy2);transform:translateY(-1px);box-shadow:0 6px 20px rgba(15,34,52,.25)}
+.btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:#B45309;transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--navy)}.btn-outline:hover{background:var(--navy);color:#fff}
+.btn-soft{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.22)}.btn-soft:hover{background:rgba(255,255,255,.18)}
 
-/* OVER SECTIE */
-.over-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:48px}
-.photo-wrap{position:relative;padding:0 20px 20px 0}
-.photo-frame{border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:var(--navy);max-width:340px}
-.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-.pbadge{position:absolute;bottom:0;right:0;background:var(--navy);border-radius:14px;padding:14px 18px;border:3px solid var(--white);box-shadow:0 6px 24px rgba(27,58,92,.18)}
-.pbadge strong{display:block;font-size:24px;font-weight:900;color:var(--amber);letter-spacing:-1px;line-height:1}
-.pbadge span{font-size:11px;color:var(--sm);display:block;margin-top:2px}
-.prose p{font-size:15px;line-height:1.8;color:#3A5068;margin-bottom:14px}
-.prose p strong{color:var(--navy);font-weight:700}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.chip{padding:6px 12px;background:var(--white);border:.5px solid var(--border);border-radius:20px;font-size:12px;color:var(--navy);font-weight:600}
+/* Cards */
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r2);padding:32px;transition:all .2s}
+.card:hover{border-color:var(--navy);box-shadow:0 6px 24px rgba(28,61,90,.08);transform:translateY(-2px)}
 
-/* WERKWIJZE MET FOTO */
-.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:48px}
-.how-img{border-radius:20px;overflow:hidden;aspect-ratio:4/3;position:relative}
+/* Checklist */
+.chk{list-style:none;display:flex;flex-direction:column;gap:11px}
+.chk li{display:flex;align-items:flex-start;gap:11px;font-size:14.5px;color:var(--ink2);line-height:1.65}
+.chk li span.ck{width:20px;height:20px;border-radius:50%;background:var(--sage-lt);flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px;font-size:10px;color:var(--sage);font-weight:900}
+
+/* Divider line */
+.divider{height:1px;background:var(--line);margin:0}
+
+/* Page hero */
+.phero{background:var(--navy2);padding:128px 0 72px;position:relative;overflow:hidden}
+.phero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 40%,rgba(217,119,6,.09),transparent 55%)}
+.phero-inner{max-width:1080px;margin:0 auto;padding:0 6vw;position:relative;z-index:2}
+.bc{display:flex;gap:8px;align-items:center;margin-bottom:20px}
+.bc a{color:rgba(255,255,255,.4);font-size:12.5px;text-decoration:none}.bc a:hover{color:#fff}
+.bc s{color:rgba(255,255,255,.2);font-style:normal}
+.phero h1{color:#fff;margin-bottom:16px}.phero h1 em{color:#FCD34D}
+.phero-sub{font-size:17px;color:rgba(255,255,255,.65);line-height:1.75;max-width:560px}
+.hpills{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.hpill{font-size:12px;font-weight:600;color:rgba(255,255,255,.6);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:50px;padding:4px 13px}
+
+/* Footer */
+footer{background:var(--navy2)}
+.footer-inner{max-width:1080px;margin:0 auto;padding:64px 6vw 0}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.07)}
+.fbrand .fname{font-family:'Fraunces',serif;font-size:18px;font-weight:600;color:#fff}
+.fbrand .ftag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);display:block;margin-top:2px}
+.fbrand p{font-size:13px;color:rgba(255,255,255,.45);line-height:1.7;margin-top:14px;max-width:210px}
+.fcol h4{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+.fcol ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.fcol a{font-size:13.5px;color:rgba(255,255,255,.5);text-decoration:none;transition:color .15s}.fcol a:hover{color:#fff}
+.fskj{display:flex;align-items:center;gap:8px;margin-top:16px;padding:8px 12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px;width:fit-content}
+.fskj-dot{width:7px;height:7px;border-radius:50%;background:#22C55E;flex-shrink:0}
+.fskj span{font-size:11.5px;color:rgba(255,255,255,.55);font-weight:600}
+.fbot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:16px 0;font-size:12px;color:rgba(255,255,255,.28)}
+.fbot a{color:rgba(255,255,255,.28);text-decoration:none}.fbot a:hover{color:rgba(255,255,255,.7)}
+.fportal{color:rgba(255,200,80,.6)!important;font-weight:600}.fportal:hover{color:rgba(255,200,80,1)!important}
+
+/* Responsive */
+@media(max-width:960px){
+  .nlinks{display:none}.nmob{display:block}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  section{padding:72px 0}
+}
+@media(max-width:640px){
+  .footer-grid{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .phero{padding:100px 0 56px}
+}
+
+/* ── HERO ── */
+.hero{min-height:100svh;background:var(--navy2);display:flex;align-items:center;padding:88px 0 72px;position:relative;overflow:hidden}
+.hero-img{position:absolute;inset:0;z-index:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 35%;opacity:.16;display:block}
+.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(12,27,44,.88) 0%,rgba(28,61,90,.55) 60%,rgba(12,27,44,.8) 100%)}
+.hero-grid{max-width:1080px;margin:0 auto;padding:0 6vw;position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 0.85fr;gap:64px;align-items:center;width:100%}
+.hero-eyebrow{display:flex;align-items:center;gap:8px;margin-bottom:20px}
+.hero-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:blink 2.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.hero-eyebrow span{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.hero h1{color:#fff;margin-bottom:18px;font-size:clamp(36px,5.5vw,62px)}
+.hero h1 em{color:#FCD34D}
+.hero-sub{font-size:17px;color:rgba(255,255,255,.68);line-height:1.75;margin-bottom:32px;max-width:480px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:8px}
+.ht{font-size:12px;font-weight:600;color:rgba(255,255,255,.55);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);border-radius:50px;padding:4px 13px}
+
+/* Hero card */
+.hcard{border-radius:var(--r4);overflow:hidden;position:relative;aspect-ratio:3/4;max-width:340px;margin-left:auto;background:var(--navy)}
+.hcard img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.hcard-foot{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(12,27,44,.97));padding:22px 20px;z-index:2}
+.hcard-name{font-family:'Fraunces',serif;font-size:15px;font-weight:600;color:#fff;margin-bottom:2px}
+.hcard-role{font-size:11.5px;color:rgba(255,255,255,.55);margin-bottom:12px}
+.hcard-cta{display:flex;align-items:center;justify-content:space-between;padding-top:11px;border-top:1px solid rgba(255,255,255,.12)}
+.hcard-tel{color:#FCD34D;font-weight:700;font-size:13.5px;text-decoration:none}
+.hcard-wa{background:rgba(34,197,94,.12);border:.5px solid rgba(34,197,94,.3);color:#4ADE80;font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:50px;text-decoration:none}
+
+/* ── STATS ── */
+.stats{background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0}
+.stats-inner{max-width:1080px;margin:0 auto;padding:0 6vw;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:28px 20px;border-right:1px solid var(--line);text-align:center}
+.stat:last-child{border-right:none}
+.stat-n{font-family:'Fraunces',serif;font-size:38px;font-weight:600;color:var(--navy);display:block;line-height:1;letter-spacing:-.03em}
+.stat-l{font-size:13px;color:var(--ink3);margin-top:5px;line-height:1.4}
+
+/* ── INTRO ── */
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.intro-photo{position:relative}
+.intro-frame{border-radius:var(--r4);overflow:hidden;aspect-ratio:4/5;max-width:360px;background:var(--navy2)}
+.intro-frame img{width:100%;height:100%;object-fit:cover;object-position:top}
+.intro-badge{position:absolute;bottom:-8px;right:-8px;background:var(--navy2);border-radius:var(--r2);padding:14px 18px;border:3px solid #fff;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+.intro-badge strong{display:block;font-family:'Fraunces',serif;font-size:26px;font-weight:600;color:var(--gold);line-height:1;letter-spacing:-.03em}
+.intro-badge span{font-size:11px;color:rgba(255,255,255,.55);display:block;margin-top:3px}
+.intro-text h2{margin-bottom:16px}
+.intro-text p{margin-bottom:14px;max-width:460px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:var(--navy);background:var(--bg);border:1px solid var(--line);border-radius:50px;padding:5px 13px}
+
+/* ── SERVICES ── */
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
+.svc{border-radius:var(--r4);overflow:hidden;position:relative;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer}
+.svc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .5s}
+.svc:hover img{transform:scale(1.03)}
+.svc::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 10%,rgba(8,16,32,.93) 100%);z-index:2}
+.svc-bg1{background:linear-gradient(145deg,#082818,#1C3D5A)}
+.svc-bg2{background:linear-gradient(145deg,#160840,#0A3050)}
+.svc-body{position:relative;z-index:3;padding:28px}
+.svc-tag{font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block}
+.svc h3{font-size:22px;color:#fff;margin-bottom:8px}
+.svc p{font-size:13.5px;color:rgba(255,255,255,.68);line-height:1.65;margin-bottom:18px}
+.svc-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--navy2);background:var(--gold);padding:9px 18px;border-radius:50px;text-decoration:none;transition:all .18s}
+.svc-link:hover{background:#B45309;gap:10px}
+
+/* Sub services */
+.sub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.sub{background:#fff;border:1px solid var(--line);border-radius:var(--r2);padding:20px 18px;transition:all .2s}
+.sub:hover{border-color:var(--navy);box-shadow:0 4px 16px rgba(28,61,90,.07)}
+.sub-ico{font-size:22px;margin-bottom:10px}
+.sub h4{font-size:13.5px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.sub p{font-size:12.5px;color:var(--ink3);line-height:1.6}
+
+/* ── DAGBESTEDING ── */
+.dagb{background:var(--navy2);border-radius:var(--r4);padding:44px 48px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;margin-top:14px}
+.dagb-left h3{color:#fff;margin-bottom:10px}.dagb-left h3 em{color:#FCD34D}
+.dagb-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(217,119,6,.14);border:1px solid rgba(217,119,6,.3);border-radius:50px;padding:4px 12px;margin-bottom:12px;font-size:10.5px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+.dagb-left p{font-size:13.5px;color:rgba(255,255,255,.58);line-height:1.75}
+.dagb-items{display:flex;flex-direction:column;gap:10px}
+.di{display:flex;gap:12px;padding:13px 15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--r2)}
+.di-ico{font-size:18px;flex-shrink:0}
+.di strong{display:block;font-size:13px;font-weight:700;color:#fff;margin-bottom:2px}
+.di span{font-size:12px;color:rgba(255,255,255,.5);line-height:1.5}
+
+/* ── HOW ── */
+.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.how-img{border-radius:var(--r4);overflow:hidden;position:relative;aspect-ratio:4/3}
 .how-img img{width:100%;height:100%;object-fit:cover;display:block}
-.how-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(transparent,rgba(18,40,66,.7))}
-.how-cap{position:absolute;bottom:14px;left:14px;right:14px;z-index:2}
-.how-cap p{font-size:13px;color:var(--sky);font-weight:600}
-.steps{display:flex;flex-direction:column;gap:14px}
-.step{display:flex;gap:13px;align-items:flex-start}
-.snum{width:34px;height:34px;border-radius:10px;background:var(--al);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:var(--navy);flex-shrink:0;margin-top:2px}
-.step h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:3px}
-.step p{font-size:13px;color:var(--muted);line-height:1.6}
+.how-cap{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(12,27,44,.85);backdrop-filter:blur(8px);border-radius:var(--r2);padding:11px 15px}
+.how-cap p{font-size:13px;color:rgba(255,255,255,.88);line-height:1.5}
+.steps{display:flex;flex-direction:column}
+.step{display:flex;gap:0;align-items:stretch}
+.step-track{display:flex;flex-direction:column;align-items:center;width:42px;flex-shrink:0}
+.step-num{width:34px;height:34px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex-shrink:0;z-index:1}
+.step-line{width:2px;background:var(--line);flex:1;margin:4px 0}
+.step:last-child .step-line{display:none}
+.step-body{padding:2px 0 24px 14px}
+.step-body h4{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.step-body p{font-size:13px;color:var(--ink3);line-height:1.65}
 
-/* SPECIALISATIES */
-.spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}
-.spec-card{border-radius:20px;overflow:hidden;position:relative;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end}
-.spec-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
-.spec-card::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 10%,rgba(8,18,36,.92) 100%);z-index:2}
-.s1{background:linear-gradient(160deg,#0F4C3A,#1B3A5C)}
-.s2{background:linear-gradient(160deg,#2A1F5C,#0A4A6E)}
-.spec-body{position:relative;z-index:3;padding:26px}
-.spec-tag{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:6px;display:block}
-.spec-card h3{font-size:21px;font-weight:900;color:var(--white);margin-bottom:7px;line-height:1.15}
-.spec-card p{font-size:13px;color:var(--sm);line-height:1.65;margin-bottom:16px}
-.spec-link{display:inline-flex;align-items:center;gap:6px;background:var(--amber);color:var(--deep);font-size:13px;font-weight:700;padding:9px 17px;border-radius:10px;text-decoration:none;transition:all .2s}
-.spec-link:hover{background:#E89A20}
+/* ── COMPARE ── */
+.cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
+.cmp-table{border-radius:var(--r2);overflow:hidden;border:1px solid var(--line)}
+.ctr{display:grid;grid-template-columns:1fr 1fr 1fr}
+.cth{background:var(--navy2);padding:0}
+.cth div{padding:11px 14px;font-size:11.5px;font-weight:700;color:rgba(255,255,255,.45)}
+.cth div:nth-child(2){color:var(--gold)}
+.ctr-row{border-bottom:1px solid var(--line)}
+.ctr-row:last-child{border-bottom:none}
+.ctr-row:nth-child(odd){background:var(--bg)}
+.ctr-row div{padding:11px 14px;font-size:13px;color:var(--ink2)}
+.ok{color:#059669;font-weight:700}.no{color:#DC2626}
+.cmp-points{display:flex;flex-direction:column;gap:14px}
+.cp{display:flex;gap:12px;align-items:flex-start}
+.cp-ico{width:38px;height:38px;border-radius:10px;background:var(--bg);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.cp strong{display:block;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.cp span{font-size:13px;color:var(--ink3);line-height:1.6}
 
-/* ONDERSCHEID */
-.vtbl{border-radius:16px;overflow:hidden;border:.5px solid var(--border)}
-.vrow{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:.5px solid var(--border)}
-.vrow:last-child{border-bottom:none}
-.vc{padding:11px 14px;font-size:13px}
-.vh{background:var(--navy)}.vh .vc{color:var(--sm);font-weight:700;font-size:12px}.vh .vc.g{color:var(--amber)}
-.vrow:nth-child(even){background:var(--bg)}
-.ok{color:#22A06B;font-weight:700}.no{color:#CA3C3C}.gc{color:var(--navy);font-weight:600}
-
-/* REVIEWS */
-.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:44px}
-.rev{background:var(--white);border:.5px solid var(--border);border-radius:18px;padding:26px 22px;position:relative}
-.rev-stars{color:var(--amber);font-size:13px;margin-bottom:10px}
-.rev p{font-family:'Lora',serif;font-style:italic;font-size:15px;color:var(--text);line-height:1.75;margin-bottom:16px}
+/* ── REVIEWS ── */
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:48px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r2);padding:28px;position:relative;overflow:hidden}
+.rev::before{content:'\201C';position:absolute;top:-12px;left:16px;font-family:'Fraunces',serif;font-size:96px;color:var(--bg);line-height:1;pointer-events:none}
+.rev-stars{color:var(--gold);font-size:12.5px;margin-bottom:12px;position:relative}
+.rev p{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:15.5px;color:var(--ink);line-height:1.75;margin-bottom:18px;position:relative}
 .rev-meta{display:flex;align-items:center;gap:10px}
-.rev-av{width:36px;height:36px;border-radius:50%;background:var(--al);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--navy);flex-shrink:0}
+.rev-av{width:34px;height:34px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--navy);flex-shrink:0;border:1px solid var(--line)}
 .rev-meta strong{display:block;font-size:13px;font-weight:700;color:var(--navy)}
-.rev-meta span{font-size:12px;color:var(--muted)}
+.rev-meta span{font-size:12px;color:var(--ink3)}
 
-/* FINANCIERING */
-.fin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
-.fin-card{background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:18px;padding:24px 20px;transition:all .2s}
-.fin-card.ft{background:rgba(244,168,41,.12);border-color:rgba(244,168,41,.4)}
-.fin-card:hover{transform:translateY(-3px)}
-.fin-lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--sm);font-weight:600;margin-bottom:8px}
-.fin-card.ft .fin-lbl{color:var(--amber)}
-.fin-badge{display:inline-block;background:rgba(244,168,41,.2);color:var(--amber);font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;margin-bottom:8px}
-.fin-title{font-size:17px;font-weight:900;color:var(--white);margin-bottom:6px}
-.fin-desc{font-size:13px;color:var(--sm);line-height:1.6}
+/* ── FINANCIERING ── */
+.fin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px}
+.fin{border-radius:var(--r2);padding:26px 22px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);transition:all .2s}
+.fin:hover{transform:translateY(-2px)}
+.fin.ft{background:rgba(217,119,6,.09);border-color:rgba(217,119,6,.3)}
+.fin-tag{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.4);display:block;margin-bottom:8px}
+.fin.ft .fin-tag{color:var(--gold)}
+.fin-badge{display:inline-block;background:rgba(217,119,6,.18);color:var(--gold);font-size:10px;font-weight:700;padding:3px 9px;border-radius:50px;margin-bottom:9px}
+.fin h4{font-family:'Fraunces',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:6px}
+.fin p{font-size:13px;color:rgba(255,255,255,.52);line-height:1.65}
 
-/* CONTACT */
-.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:48px;align-items:start}
-.cm{display:flex;align-items:center;gap:14px;padding:13px 16px;border-radius:13px;background:var(--bg);border:.5px solid var(--border);text-decoration:none;transition:all .2s;margin-bottom:10px}
-.cm:hover{border-color:var(--navy);background:var(--sky)}
-.cm-ico{width:36px;height:36px;border-radius:9px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
-.cm strong{display:block;font-size:14px;color:var(--navy);font-weight:700}
-.cm span{font-size:12px;color:var(--muted)}
-.cform{background:var(--bg);border:.5px solid var(--border);border-radius:20px;padding:30px}
-.cform h3{font-size:18px;font-weight:800;color:var(--navy);margin-bottom:4px}
-.cfsub{font-size:13px;color:var(--muted);margin-bottom:20px}
-.fg{margin-bottom:12px}
-.fg label{display:block;font-size:12px;font-weight:600;color:var(--navy);margin-bottom:4px}
-.fg input,.fg select,.fg textarea{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);background:var(--white);outline:none;transition:border-color .2s}
-.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--navy)}
-.fg textarea{height:84px;resize:vertical}
-.fr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.fsub{width:100%;padding:13px;background:var(--navy);color:var(--white);border:none;border-radius:11px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s;margin-top:4px}
-.fsub:hover{background:var(--deep)}
-.fok{display:none;background:#E8F5EE;border:1px solid #22A06B;border-radius:10px;padding:14px;text-align:center;margin-top:10px}
-.fok.show{display:block}
-.fok h4{color:#1A5C3A;font-size:14px;font-weight:700;margin-bottom:3px}
-.fok p{color:#3A7A5A;font-size:12px}
-.fprivacy{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;line-height:1.5}
-.fprivacy a{color:var(--navy);text-decoration:none}
-.cinfo{font-size:12px;color:var(--muted);line-height:1.9;padding-top:12px;border-top:.5px solid var(--border);margin-top:4px}
-.cinfo strong{color:var(--navy)}
+/* ── CONTACT INLINE ── */
+.cta-bar{background:var(--bg);border:1px solid var(--line);border-radius:var(--r4);padding:44px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-top:64px}
+.cta-bar h3{font-size:clamp(20px,2.5vw,26px);color:var(--navy)}.cta-bar h3 em{color:var(--gold)}
+.cta-bar-btns{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0}
 
-/* FOOTER */
-footer{background:var(--deep);padding:48px 5vw 28px}
-.fi{max-width:1080px;margin:0 auto}
-.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;padding-bottom:28px;border-bottom:.5px solid rgba(255,255,255,.08);margin-bottom:20px}
-.flogo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.flm{width:34px;height:34px;background:var(--amber);border-radius:9px;display:flex;align-items:center;justify-content:center}
-.flm svg{width:20px;height:20px}
-.fln strong{font-size:17px;font-weight:900;color:var(--white);letter-spacing:-.3px;display:block}
-.fln small{font-size:9px;letter-spacing:2.5px;color:var(--sm);text-transform:uppercase}
-.fdesc{font-size:13px;color:var(--sm);line-height:1.65;max-width:230px}
-.fcol h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--white);margin-bottom:14px}
-.fcol ul{list-style:none;display:flex;flex-direction:column;gap:8px}
-.fcol ul a{font-size:13px;color:var(--sm);text-decoration:none;transition:color .2s}
-.fcol ul a:hover{color:var(--amber)}
-.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.fbot p,.fbot a{font-size:12px;color:var(--sm);text-decoration:none}.fbot a:hover{color:var(--amber)}
-
-@media(max-width:900px){.hgrid,.over-grid,.how-grid,.cgrid{grid-template-columns:1fr;gap:40px}.spec-grid{grid-template-columns:1fr}.dstrip{grid-template-columns:1fr 1fr}.fin-grid{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr 1fr}.nlinks{display:none}.hero{padding:100px 5vw 60px}}
-@media(max-width:600px){.dstrip,.fin-grid,.fgrid{grid-template-columns:1fr}.fr{grid-template-columns:1fr}section{padding:56px 5vw}}
+/* Responsive adjustments for this page */
+@media(max-width:960px){
+  .hero-grid,.intro-grid,.svc-grid,.how-grid,.cmp-grid,.rev-grid{grid-template-columns:1fr;gap:36px}
+  .svc-grid{grid-template-columns:1fr}
+  .hcard{max-width:280px;margin:0 auto}
+  .stats-inner{grid-template-columns:1fr 1fr}
+  .sub-grid{grid-template-columns:1fr 1fr}
+  .fin-grid{grid-template-columns:1fr 1fr}
+  .dagb{grid-template-columns:1fr;padding:28px 24px}
+  .cta-bar{padding:28px 24px;flex-direction:column;align-items:flex-start}
+}
+@media(max-width:640px){
+  .sub-grid,.fin-grid{grid-template-columns:1fr}
+  .stats-inner{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html" class="nlogo"><div class="nicon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 12A6 6 0 1 0 12 18" stroke="#F4A829" stroke-width="2.2" stroke-linecap="round"/><line x1="12" y1="12" x2="18" y2="12" stroke="#F4A829" stroke-width="2.2" stroke-linecap="round"/><line x1="18" y1="12" x2="18" y2="16" stroke="#F4A829" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="18" r="1.5" fill="#E8F4FD"/></svg></div><div class="ntext"><strong>GRIP</strong><span>Begeleiding</span></div></a>
-  <ul class="nlinks">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="over-ons.html">Over ons</a></li>
-    <li><a href="autisme-begeleiding.html">Autisme</a></li>
-    <li><a href="lvb-begeleiding.html">LVB</a></li>
-    <li><a href="voor-verwijzers.html">Voor verwijzers</a></li>
-    <li><a href="scholen-werkgevers.html">Scholen &amp; werkgevers</a></li>
-    <li><a href="werken-bij.html">Werken bij</a></li>
-    <li><a href="contact.html" class="ncta">Contact</a></li>
-  </ul>
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nlogo">
+      <div class="nmark"><svg viewBox="0 0 24 24" fill="none"><path d="M18 12A6 6 0 1 0 12 18" stroke="#F4A829" stroke-width="2.3" stroke-linecap="round"/><line x1="12" y1="12" x2="18" y2="12" stroke="#F4A829" stroke-width="2.3" stroke-linecap="round"/><line x1="18" y1="12" x2="18" y2="16" stroke="#F4A829" stroke-width="2.3" stroke-linecap="round"/></svg></div>
+      <div><span class="nbrand">GRIP</span><span class="nsub">Begeleiding</span></div>
+    </a>
+    <ul class="nlinks">
+      <li><a href="index.html" class="on">Home</a></li>
+      <li><a href="over-ons.html">Over ons</a></li>
+      <li><a href="autisme-begeleiding.html">Autisme</a></li>
+      <li><a href="lvb-begeleiding.html">LVB</a></li>
+      <li><a href="voor-verwijzers.html">Verwijzers</a></li>
+      <li><a href="werken-bij.html">Werken bij</a></li>
+      <li><a href="contact.html" class="ncta">Contact</a></li>
+    </ul>
+    <button class="nmob" onclick="toggleNav()" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div>
 </nav>
 
 <!-- HERO -->
 <header class="hero">
-  <div class="hgrid">
+  <div class="hero-img"><img src="img-wandelcoaching.webp" alt="" aria-hidden="true" loading="eager"/></div>
+  <div class="hero-grid">
     <div>
-      <div class="hbadge"><div class="hdot"></div><span>Zoetermeer · Den Haag · Delft · Leiden · Gouda · Alphen en meer</span></div>
-      <h1>Ambulante begeleiding die<br><em>écht aansluit</em></h1>
-      <p class="hsub">Voor kinderen, jongeren en jongvolwassenen (10–30 jaar) met autisme of LVB. Één vast gezicht, snel beschikbaar — thuis, in de buurt of in de natuur.</p>
-      <div class="hbtns">
-        <a href="contact.html" class="btn btn-a">Gratis kennismaking →</a>
-        <a href="over-ons.html" class="btn btn-w">Over GRIP</a>
+      <div class="hero-eyebrow"><div class="hero-dot"></div><span>Zoetermeer &amp; Zuid-Holland</span></div>
+      <h1>Begeleiding die<br><em>écht aansluit</em></h1>
+      <p class="hero-sub">Voor kinderen, jongeren en jongvolwassenen (10–30 jaar) met autisme of LVB. Één vaste begeleider, snel beschikbaar — in jouw vertrouwde omgeving.</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-gold">Gratis kennismaking →</a>
+        <a href="over-ons.html" class="btn btn-soft">Over GRIP</a>
       </div>
-      <div class="htrust">
-        <div class="htp">✓ SKJ 160013906</div>
-        <div class="htp">🎓 HBO Social Work</div>
-        <div class="htp">⚡ 1–2 weken wachttijd</div>
-        <div class="htp">🌿 Wandelcoaching</div>
-        <div class="htp">🥊 Bokstherapie</div>
+      <div class="hero-trust">
+        <span class="ht">✓ SKJ-geregistreerd</span>
+        <span class="ht">✓ HBO Social Work</span>
+        <span class="ht">✓ Start binnen 1–2 weken</span>
+        <span class="ht">✓ 15+ gemeenten</span>
       </div>
     </div>
     <div>
-      <!-- Hero visual: coaching illustration -->
-      <div style="border-radius:22px;overflow:hidden;position:relative;aspect-ratio:4/5;max-width:360px;margin:0 auto;background:linear-gradient(160deg,#0A2818,#1B3A5C 50%,#2A4A6E)">
-        <img src="img-wandelcoaching.webp" alt="Coach en jongere wandelen samen in de natuur" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;opacity:.85"/>
-        <div style="position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(10,25,50,.96) 100%)"></div>
-        <div style="position:absolute;bottom:0;left:0;right:0;padding:20px;z-index:2">
-          <p style="font-size:13px;font-weight:700;color:var(--white);margin-bottom:4px">Begeleiding in jouw omgeving</p>
-          <p style="font-size:12px;color:var(--sm);margin-bottom:12px">Thuis, buiten, op school — wij komen naar jou</p>
-          <div style="display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid rgba(255,255,255,.15)">
-            <a href="tel:+31797200520" style="color:var(--amber);font-weight:700;font-size:15px;text-decoration:none">079 720 05 20</a>
-            <a href="https://wa.me/31797200520" style="background:rgba(37,211,102,.15);border:.5px solid rgba(37,211,102,.3);color:#25D166;font-size:12px;font-weight:600;padding:6px 12px;border-radius:8px;text-decoration:none">💬 WhatsApp</a>
+      <div class="hcard">
+        <img src="foto-bugra.jpg" alt="Buğra Işik — oprichter GRIP Begeleiding" loading="eager"/>
+        <div class="hcard-foot">
+          <p class="hcard-name">Buğra Işik</p>
+          <p class="hcard-role">Oprichter · 13+ jaar ervaring in welzijn</p>
+          <div class="hcard-cta">
+            <a href="tel:+31797200520" class="hcard-tel">079 720 05 20</a>
+            <a href="https://wa.me/31797200520" class="hcard-wa">💬 WhatsApp</a>
           </div>
         </div>
       </div>
@@ -235,38 +330,35 @@ footer{background:var(--deep);padding:48px 5vw 28px}
   </div>
 </header>
 
-<!-- DOELGROEP STRIP -->
-<section style="padding:0">
-  <div class="si" style="padding:0">
-    <div class="dstrip">
-      <div class="ds"><div class="ds-ico">🧒</div><p class="ds-lbl">Kinderen</p><p class="ds-sub">Vanaf 10 jaar · autisme &amp; LVB · school &amp; thuis</p></div>
-      <div class="ds"><div class="ds-ico">🧑</div><p class="ds-lbl">Jongeren</p><p class="ds-sub">12–18 jaar · VO, MBO en dagbesteding</p></div>
-      <div class="ds"><div class="ds-ico">🧑‍💼</div><p class="ds-lbl">Jongvolwassenen</p><p class="ds-sub">18–30 jaar · zelfstandig wonen, werk</p></div>
-      <div class="ds"><div class="ds-ico">🏛️</div><p class="ds-lbl">Zoetermeer en omgeving</p><p class="ds-sub">Zoetermeer · Den Haag · Delft · Leiden · Gouda · Alphen · Rijswijk en meer</p></div>
-    </div>
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat"><span class="stat-n">10–30</span><p class="stat-l">jaar — kinderen t/m jongvolwassenen</p></div>
+    <div class="stat"><span class="stat-n">1–2</span><p class="stat-l">weken wachttijd na intake</p></div>
+    <div class="stat"><span class="stat-n">15+</span><p class="stat-l">gemeenten in Zuid-Holland</p></div>
+    <div class="stat"><span class="stat-n">13+</span><p class="stat-l">jaar ervaring in de welzijnssector</p></div>
   </div>
-</section>
+</div>
 
-<!-- OVER ONS -->
+<!-- INTRO -->
 <section class="bg">
-  <div class="si">
-    <div class="over-grid">
-      <div class="photo-wrap">
-        <div class="photo-frame"><img src="foto-bugra.jpg" alt="Buğra Işik — oprichter GRIP Begeleiding" loading="lazy"/></div>
-        <div class="pbadge"><strong>13+</strong><span>jaar ervaring</span></div>
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="intro-photo">
+        <div class="intro-frame"><img src="foto-bugra.jpg" alt="Buğra Işik" loading="lazy"/></div>
+        <div class="intro-badge"><strong>13+</strong><span>jaar ervaring</span></div>
       </div>
-      <div class="prose">
-        <span class="lbl">Over GRIP Begeleiding</span>
-        <h2 class="ttl">Begeleiding gebouwd op<br><em>vertrouwen en ervaring</em></h2>
-        <p>GRIP Begeleiding is opgericht door <strong>Buğra Işik</strong>, actief in de welzijnssector sinds 2013. Vanuit de overtuiging dat continuïteit en persoonlijk contact het verschil maken, groeit GRIP naar een netwerk van geregistreerde ambulante coaches in de Zoetermeer en omgeving.</p>
-        <p>Wat ons onderscheidt: geen wachtlijst van maanden, geen wisselende gezichten. Jij krijgt één vaste begeleider die jou écht leert kennen — of je nu 10 of 28 bent.</p>
+      <div class="intro-text">
+        <span class="eyebrow">Over GRIP Begeleiding</span>
+        <h2>Meer dan begeleiding.<br><em>Een vertrouwd gezicht.</em></h2>
+        <p>GRIP is opgericht door Buğra Işik, actief in de welzijnssector sinds 2013. Geen groot anoniem bureau — maar een organisatie die groeit vanuit de overtuiging dat continuïteit het échte verschil maakt.</p>
+        <p>Jij krijgt één vaste begeleider die jou en jouw situatie door en door kent. Iemand die er ook is wanneer het even moeilijk gaat.</p>
         <div class="chips">
-          <div class="chip">✅ SKJ: 160013906</div>
-          <div class="chip">🎓 BSW GPA 7.1</div>
-          <div class="chip">📅 Actief sinds 2013</div>
-          <div class="chip">🏥 KvK 76801284</div>
+          <span class="chip">✓ SKJ-geregistreerd</span>
+          <span class="chip">✓ HBO Social Work · GPA 7.1</span>
+          <span class="chip">✓ Zoetermeer &amp; omgeving</span>
         </div>
-        <p style="margin-top:18px"><a href="over-ons.html" style="color:var(--navy);font-weight:700;font-size:14px;text-decoration:none">Lees meer over onze organisatie →</a></p>
+        <p style="margin-top:20px"><a href="over-ons.html" style="color:var(--navy);font-weight:700;font-size:14px;text-decoration:none">Meer over onze organisatie →</a></p>
       </div>
     </div>
   </div>
@@ -274,28 +366,52 @@ footer{background:var(--deep);padding:48px 5vw 28px}
 
 <!-- SPECIALISATIES -->
 <section>
-  <div class="si">
-    <span class="lbl">Specialisaties</span>
-    <h2 class="ttl">Twee vakgebieden,<br><em>diep beheerst</em></h2>
-    <p class="sub">Geen generalist. Wij kennen de doelgroep van binnen en van buiten — en dat merk je direct in de aanpak.</p>
-    <div class="spec-grid">
-      <div class="spec-card s1">
-        <img src="img-begeleiding-thuis.jpg" alt="Autismebegeleiding aan huis" loading="lazy"/>
-        <div class="spec-body">
-          <span class="spec-tag">Autismespectrum · ASS</span>
+  <div class="wrap">
+    <span class="eyebrow">Specialisaties</span>
+    <h2>Twee vakgebieden,<br><em>diep beheerst</em></h2>
+    <p class="lead" style="margin-top:10px">Wij werken uitsluitend met autisme en LVB. Geen breed aanbod voor iedereen — een gerichte aanpak voor wie dat het meest nodig heeft.</p>
+
+    <div class="svc-grid">
+      <div class="svc svc-bg1">
+        <img src="img-begeleiding-thuis.jpg" alt="Autismebegeleiding" loading="lazy"/>
+        <div class="svc-body">
+          <span class="svc-tag">Autismespectrum · ASS</span>
           <h3>Begeleiding op jouw spectrum</h3>
-          <p>Prikkels, dagstructuur, sociale situaties, zelfregie. Wij sluiten aan op hoe jij de wereld ervaart — niet andersom.</p>
-          <a href="autisme-begeleiding.html" class="spec-link">Meer over autismebegeleiding →</a>
+          <p>Prikkels, structuur, sociale situaties, zelfregie. Wij sluiten aan op hoe jij de wereld ervaart — niet andersom.</p>
+          <a href="autisme-begeleiding.html" class="svc-link">Meer over autisme →</a>
         </div>
       </div>
-      <div class="spec-card s2">
-        <img src="img-coach-kind.jpg" alt="LVB begeleiding met kind" loading="lazy"/>
-        <div class="spec-body">
-          <span class="spec-tag">Licht Verstandelijke Beperking · LVB</span>
-          <h3>Helder, praktisch, op jouw tempo</h3>
-          <p>Post, financiën, dagstructuur, instanties. Concrete hulp in heldere taal — stap voor stap, zonder gedoe.</p>
-          <a href="lvb-begeleiding.html" class="spec-link">Meer over LVB-begeleiding →</a>
+      <div class="svc svc-bg2">
+        <img src="img-coach-kind.jpg" alt="LVB begeleiding" loading="lazy"/>
+        <div class="svc-body">
+          <span class="svc-tag">Licht Verstandelijke Beperking · LVB</span>
+          <h3>Concreet, helder, op jouw tempo</h3>
+          <p>Post, financiën, instanties, dagstructuur. Samen aanpakken wat anders overweldigend lijkt.</p>
+          <a href="lvb-begeleiding.html" class="svc-link">Meer over LVB →</a>
         </div>
+      </div>
+    </div>
+
+    <div class="sub-grid">
+      <div class="sub"><div class="sub-ico">🏠</div><h4>Thuis &amp; zelfstandig wonen</h4><p>Huishouden, post, financiën en instanties — praktisch en concreet.</p></div>
+      <div class="sub"><div class="sub-ico">📚</div><h4>School &amp; MBO</h4><p>Begeleiding bij schoolgang, uitval en de stap naar werk.</p></div>
+      <div class="sub"><div class="sub-ico">👨‍👩‍👧</div><h4>Gezinsondersteuning</h4><p>Ouders begrijpen wat er speelt en dagstructuur opbouwen thuis.</p></div>
+      <div class="sub"><div class="sub-ico">🌿</div><h4>Wandelcoaching</h4><p>Buiten bewegen maakt praten makkelijker. Soms is dat de beste plek.</p></div>
+      <div class="sub"><div class="sub-ico">🥊</div><h4>Bokstherapie</h4><p>Emotieregulatie en zelfvertrouwen via bewegen. Bewezen effectief.</p></div>
+      <div class="sub"><div class="sub-ico">🫶</div><h4>ADL-begeleiding</h4><p>Persoonlijke verzorging en basisroutines — wanneer dat extra steun vraagt.</p></div>
+    </div>
+
+    <!-- Dagbesteding -->
+    <div class="dagb">
+      <div class="dagb-left">
+        <div class="dagb-badge">🏗️ In ontwikkeling</div>
+        <h3>Eigen dagbesteding<br><em>voor jongeren in Zoetermeer</em></h3>
+        <p>GRIP werkt aan een eigen dagbestedingslocatie — een veilige, activerende omgeving waar jongeren met autisme of LVB kunnen groeien, bewegen en zichzelf ontplooien. Kleinschalig, professioneel begeleid.</p>
+      </div>
+      <div class="dagb-items">
+        <div class="di"><div class="di-ico">🏋️</div><div><strong>Beweging &amp; sport</strong><span>Boksen, bewegen, buiten — activiteiten die energie geven en structuur bieden</span></div></div>
+        <div class="di"><div class="di-ico">🎯</div><div><strong>Praktische vaardigheden</strong><span>Sociale interactie, persoonlijke groei en dagelijkse taken</span></div></div>
+        <div class="di"><div class="di-ico">📬</div><div><strong>Op de hoogte blijven?</strong><span>Meld interesse via <a href="contact.html" style="color:#FCD34D">ons contactformulier</a></span></div></div>
       </div>
     </div>
   </div>
@@ -303,66 +419,65 @@ footer{background:var(--deep);padding:48px 5vw 28px}
 
 <!-- WERKWIJZE -->
 <section class="bg">
-  <div class="si">
+  <div class="wrap">
     <div class="how-grid">
       <div class="how-img">
-        <img src="img-coach-jongere.png" alt="Begeleiding bij jongere thuis" loading="lazy"/>
-        <div class="how-cap"><p>Wij komen naar jou toe — thuis, in de buurt, op school of bij instanties</p></div>
+        <img src="img-coach-jongere.png" alt="Begeleiding in de vertrouwde omgeving" loading="lazy"/>
+        <div class="how-cap"><p>Thuis, op school, in de buurt of in de natuur — wij komen naar jou toe</p></div>
       </div>
       <div>
-        <span class="lbl">Hoe het werkt</span>
-        <h2 class="ttl">Van aanmelding naar<br><em>tastbaar resultaat</em></h2>
-        <p style="font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:24px">Geen bureaucratie, geen maanden wachten. Wij schakelen snel.</p>
+        <span class="eyebrow">Hoe het werkt</span>
+        <h2 style="margin-bottom:32px">Van aanmelding<br><em>naar resultaat</em></h2>
         <div class="steps">
-          <div class="step"><div class="snum">1</div><div><h3>Gratis kennismaking</h3><p>Bel, app of mail — wij reageren binnen 48 uur. Geen verplichtingen, geen formulieren.</p></div></div>
-          <div class="step"><div class="snum">2</div><div><h3>Intake aan huis</h3><p>Gesprek bij jullie thuis over de hulpvraag, doelen en financiering. Ouders worden actief betrokken.</p></div></div>
-          <div class="step"><div class="snum">3</div><div><h3>Start begeleiding</h3><p>Eigen vaste begeleider, ook 's avonds en op zaterdag. Wachttijd: 1–2 weken na intake.</p></div></div>
-          <div class="step"><div class="snum">4</div><div><h3>Meten en bijsturen</h3><p>Voortgang via ZRM-zelfredzaamheidsmatrix. Regelmatige afstemming met ouders of verwijzer.</p></div></div>
+          <div class="step"><div class="step-track"><div class="step-num">1</div><div class="step-line"></div></div><div class="step-body"><h4>Vrijblijvend contact</h4><p>Bel, app of mail. Reactie binnen 48 uur. Geen formulieren, geen gedoe.</p></div></div>
+          <div class="step"><div class="step-track"><div class="step-num">2</div><div class="step-line"></div></div><div class="step-body"><h4>Intake bij jou thuis</h4><p>We bespreken de hulpvraag, stellen doelen en regelen de financiering samen.</p></div></div>
+          <div class="step"><div class="step-track"><div class="step-num">3</div><div class="step-line"></div></div><div class="step-body"><h4>Begeleiding starten</h4><p>Eigen vaste begeleider. Ook 's avonds en op zaterdag. Wachttijd: 1–2 weken.</p></div></div>
+          <div class="step"><div class="step-track"><div class="step-num">4</div><div class="step-line"></div></div><div class="step-body"><h4>Voortgang &amp; afbouwen</h4><p>Regelmatige evaluatie. Zodra het zelfstandig lukt, bouwen we rustig af.</p></div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ONDERSCHEID -->
+<!-- VERGELIJKING -->
 <section>
-  <div class="si">
-    <span class="lbl">Waarom GRIP</span>
-    <h2 class="ttl">Wat elke cliënt verdient —<br><em>maar zelden krijgt</em></h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:44px">
-      <div class="vtbl">
-        <div class="vrow vh"><div class="vc">Aspect</div><div class="vc g">GRIP Begeleiding</div><div class="vc">Grote instelling</div></div>
-        <div class="vrow"><div class="vc">Vaste begeleider</div><div class="vc gc ok">✓ Altijd dezelfde</div><div class="vc no">Wisselend team</div></div>
-        <div class="vrow"><div class="vc">Wachttijd</div><div class="vc gc ok">✓ 1–2 weken</div><div class="vc no">Maanden</div></div>
-        <div class="vrow"><div class="vc">Avond &amp; weekend</div><div class="vc gc ok">✓ Beschikbaar</div><div class="vc no">Kantooruren</div></div>
-        <div class="vrow"><div class="vc">ASS/LVB expertise</div><div class="vc gc ok">✓ Specialisatie</div><div class="vc no">Generalistisch</div></div>
-        <div class="vrow"><div class="vc">Kinderen v.a. 10</div><div class="vc gc ok">✓ Ja</div><div class="vc no">Vaak 12+</div></div>
-        <div class="vrow"><div class="vc">Direct bereikbaar</div><div class="vc gc ok">✓ Mobiel &amp; app</div><div class="vc no">Via receptie</div></div>
+  <div class="wrap">
+    <span class="eyebrow">Waarom GRIP</span>
+    <h2>Wat je mag verwachten —<br><em>en zelden krijgt elders</em></h2>
+    <div class="cmp-grid">
+      <div class="cmp-table">
+        <div class="ctr cth"><div>Aspect</div><div>GRIP</div><div>Grote instelling</div></div>
+        <div class="ctr ctr-row"><div>Vaste begeleider</div><div class="ok">✓ Altijd dezelfde</div><div class="no">Wisselend</div></div>
+        <div class="ctr ctr-row"><div>Wachttijd</div><div class="ok">✓ 1–2 weken</div><div class="no">Maanden</div></div>
+        <div class="ctr ctr-row"><div>Avond &amp; zaterdag</div><div class="ok">✓ Beschikbaar</div><div class="no">Kantooruren</div></div>
+        <div class="ctr ctr-row"><div>ASS / LVB specialist</div><div class="ok">✓ Kern expertise</div><div class="no">Generalist</div></div>
+        <div class="ctr ctr-row"><div>Kinderen vanaf 10</div><div class="ok">✓ Ja</div><div class="no">Vaak 12+</div></div>
+        <div class="ctr ctr-row"><div>Direct bereikbaar</div><div class="ok">✓ Mobiel &amp; WhatsApp</div><div class="no">Via receptie</div></div>
       </div>
-      <div style="display:flex;flex-direction:column;gap:16px">
-        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:40px;height:40px;border-radius:11px;background:var(--al);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🎯</div><div><strong style="display:block;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:2px">Starten op het juiste moment</strong><span style="font-size:13px;color:var(--muted);line-height:1.55">Vroeg ingrijpen — ook al bij 10 jaar — voorkomt grotere problemen later. De overgang PO→VO is een kritiek moment voor kinderen met autisme of LVB.</span></div></div>
-        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:40px;height:40px;border-radius:11px;background:var(--al);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🤝</div><div><strong style="display:block;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:2px">Één vast gezicht</strong><span style="font-size:13px;color:var(--muted);line-height:1.55">Vertrouwen opbouwen kost tijd. Wij wisselen niet van begeleider — jij hebt altijd dezelfde persoon aan je zijde.</span></div></div>
-        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:40px;height:40px;border-radius:11px;background:var(--al);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🌱</div><div><strong style="display:block;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:2px">Groeien naar zelfstandigheid</strong><span style="font-size:13px;color:var(--muted);line-height:1.55">Begeleiding is geen doel op zich. Wij bouwen af zodra het kan — met een concreet eindpunt voor ogen.</span></div></div>
-        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:40px;height:40px;border-radius:11px;background:var(--al);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🏙️</div><div><strong style="display:block;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:2px">Geworteld in Zoetermeer</strong><span style="font-size:13px;color:var(--muted);line-height:1.55">GRIP groeit naar een volledig netwerk van coaches in de Zoetermeer en omgeving. Zoetermeer groot maken — dat is ons doel.</span></div></div>
+      <div class="cmp-points">
+        <div class="cp"><div class="cp-ico">🎯</div><div><strong>Vroeg ingrijpen — vanaf 10 jaar</strong><span>De overgang PO→VO is een kritiek moment. Wij zijn er precies dan, voordat de problemen escaleren.</span></div></div>
+        <div class="cp"><div class="cp-ico">🤝</div><div><strong>Eén vast gezicht</strong><span>Vertrouwen opbouwen kost tijd. Wij wisselen niet — dezelfde begeleider van begin tot eind.</span></div></div>
+        <div class="cp"><div class="cp-ico">🌿</div><div><strong>Buiten de kamer</strong><span>Wandelen, bewegen, samen doen — soms werkt dat beter dan aan tafel zitten. Wij passen ons aan.</span></div></div>
+        <div class="cp"><div class="cp-ico">🏙️</div><div><strong>Geworteld in Zoetermeer</strong><span>Lokale kennis, korte reistijden, bekende omgeving. Wij kennen de regio.</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- REVIEWS -->
+<!-- ERVARINGEN -->
 <section class="bg">
-  <div class="si">
-    <span class="lbl">Ervaringen</span>
-    <h2 class="ttl">Wat ouders en cliënten<br><em>over ons zeggen</em></h2>
+  <div class="wrap">
+    <span class="eyebrow">Ervaringen</span>
+    <h2>Wat ouders zeggen</h2>
     <div class="rev-grid">
       <div class="rev">
         <div class="rev-stars">★★★★★</div>
-        <p>"De begeleiding van GRIP heeft de situatie van mijn zoon echt gestabiliseerd. We begrijpen nu veel beter wat zijn cues en triggers zijn, en daardoor kunnen we thuis ook beter omgaan met zijn autisme. Ik had niet verwacht dat het zo snel zo'n verschil zou maken."</p>
+        <p>"De begeleiding heeft de situatie van mijn zoon echt gestabiliseerd. We begrijpen nu veel beter wat zijn triggers zijn — en daardoor kunnen we thuis ook beter omgaan met zijn autisme."</p>
         <div class="rev-meta"><div class="rev-av">M</div><div><strong>Moeder van cliënt</strong><span>Zoetermeer · Autismebegeleiding</span></div></div>
       </div>
       <div class="rev">
         <div class="rev-stars">★★★★★</div>
-        <p>"Na mijn scheiding stond ik er alleen voor. Ik kon amper het huis uit en de dagbesteding van mijn zoon sloot. Binnen een uur na mijn zoekopdracht online werd ik teruggebeld en hadden we een goed gesprek. Na twee weken stond er al een begeleider voor de deur — en wat een fijne match! Mijn zoon telt iedere keer de dagen af dat hij komt."</p>
+        <p>"Na mijn scheiding stond ik er alleen voor. Binnen een uur na mijn zoekopdracht werd ik teruggebeld. Na twee weken stond er al een begeleider voor de deur — mijn zoon telt de dagen af."</p>
         <div class="rev-meta"><div class="rev-av">O</div><div><strong>Ouder van cliënt</strong><span>Den Haag · LVB-begeleiding</span></div></div>
       </div>
     </div>
@@ -370,188 +485,81 @@ footer{background:var(--deep);padding:48px 5vw 28px}
 </section>
 
 <!-- FINANCIERING -->
-<section style="background:var(--navy)">
-  <div class="si">
-    <span class="lbl">Financiering</span>
-    <h2 class="ttl" style="color:var(--white)">Hoe wordt begeleiding<br><em>bekostigd?</em></h2>
-    <p class="sub">Begeleiding via GRIP kan worden bekostigd via Wmo, PGB of Jeugdwet. Wij helpen bij de aanvraag en denken mee over de snelste route. Neem contact op voor meer informatie.</p>
+<section class="dark">
+  <div class="wrap">
+    <span class="eyebrow" style="color:rgba(255,255,255,.4)">Financiering</span>
+    <h2 style="color:#fff;margin-top:8px">Hoe wordt begeleiding<br><em style="color:#FCD34D">bekostigd?</em></h2>
+    <p class="lead" style="color:rgba(255,255,255,.55);margin-top:10px">Via Wmo, PGB of Jeugdwet. Wij helpen bij de aanvraag en denken mee over de snelste route.</p>
     <div class="fin-grid">
-      <div class="fin-card"><p class="fin-lbl">Wmo-indicatie</p><p class="fin-title">Via gemeente</p><p class="fin-desc">Wmo-beschikking van de gemeente. De gemeente betaalt rechtstreeks aan ons — u betaalt niets.</p></div>
-      <div class="fin-card ft"><div class="fin-badge">⚡ Snelste route</div><p class="fin-lbl">PGB</p><p class="fin-title">Persoonsgebonden budget</p><p class="fin-desc">Al een PGB? Dan kunnen we direct starten via SVB-trekkingsrecht. Wij verzorgen de zorgovereenkomst.</p></div>
-      <div class="fin-card"><p class="fin-lbl">Jeugdwet</p><p class="fin-title">Via jeugdteam of wijkteam</p><p class="fin-desc">Verwijzing via jeugdteam of wijkteam voor jongeren tot 18 jaar, verlengbaar tot 23 in bijzondere gevallen.</p></div>
-    </div>
-    <div style="text-align:center;margin-top:32px"><a href="contact.html" class="btn btn-a">Neem contact op voor meer informatie →</a></div>
-  </div>
-</section>
-
-
-<!-- WERKGEBIED -->
-<section class="bg">
-  <div class="si">
-    <span class="lbl">Werkgebied</span>
-    <h2 class="ttl">Actief in een groot deel<br><em>van Zuid-Holland</em></h2>
-    <p class="sub">GRIP Begeleiding werkt in Zoetermeer en alle omliggende gemeenten — van Leiden tot Gouda, van Alphen aan den Rijn tot Rotterdam-Noord.</p>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:44px;align-items:start">
-      <div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-          <div style="background:var(--navy);border-radius:14px;padding:16px 18px">
-            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:8px">Thuisbasis</p>
-            <p style="font-size:16px;font-weight:900;color:var(--white)">📍 Zoetermeer</p>
-          </div>
-          <div style="background:var(--bg);border:.5px solid var(--border);border-radius:14px;padding:16px 18px">
-            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:8px">Regio Noord</p>
-            <p style="font-size:13px;color:var(--navy);font-weight:600;line-height:1.6">Leiden · Leiderdorp<br>Voorschoten · Wassenaar<br>Leidschendam-Voorburg</p>
-          </div>
-          <div style="background:var(--bg);border:.5px solid var(--border);border-radius:14px;padding:16px 18px">
-            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:8px">Regio West</p>
-            <p style="font-size:13px;color:var(--navy);font-weight:600;line-height:1.6">Den Haag · Rijswijk<br>Delft · Westland<br>Pijnacker-Nootdorp</p>
-          </div>
-          <div style="background:var(--bg);border:.5px solid var(--border);border-radius:14px;padding:16px 18px">
-            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:8px">Regio Oost</p>
-            <p style="font-size:13px;color:var(--navy);font-weight:600;line-height:1.6">Gouda · Waddinxveen<br>Alphen aan den Rijn<br>Bodegraven-Reeuwijk</p>
-          </div>
-          <div style="background:var(--bg);border:.5px solid var(--border);border-radius:14px;padding:16px 18px">
-            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:8px">Regio Noord-Oost</p>
-            <p style="font-size:13px;color:var(--navy);font-weight:600;line-height:1.6">Lansingerland<br>Capelle aan den IJssel<br>Nieuwerkerk a/d IJssel</p>
-          </div>
-          <div style="background:var(--bg);border:.5px solid var(--border);border-radius:14px;padding:16px 18px">
-            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:8px">Regio Zuid</p>
-            <p style="font-size:13px;color:var(--navy);font-weight:600;line-height:1.6">Rotterdam (Noord)<br>Barendrecht<br>Vlaardingen</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div style="background:var(--navy);border-radius:18px;padding:28px 26px;margin-bottom:16px">
-          <h3 style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:10px">Niet zeker of wij bij u in de buurt komen?</h3>
-          <p style="font-size:14px;color:var(--sm);line-height:1.7;margin-bottom:18px">Neem gewoon contact op — wij kijken graag of het werkbaar is. Ons netwerk van coaches groeit, waardoor wij steeds meer gemeenten kunnen bedienen.</p>
-          <a href="contact.html" style="display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:11px;background:var(--amber);color:var(--deep);font-size:14px;font-weight:700;text-decoration:none">Vraag het ons →</a>
-        </div>
-        <div style="background:var(--bg);border:.5px solid var(--border);border-radius:16px;padding:20px 22px">
-          <p style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px">🗺️ Hoe bepalen wij de regio?</p>
-          <p style="font-size:13px;color:var(--muted);line-height:1.7">Wij koppelen cliënten aan de dichtstbijzijnde beschikbare coach. Zo houden wij reistijden kort en begeleiding laagdrempelig. Voor kinderen is dit extra belangrijk — een vertrouwde buurtcoach werkt beter dan iemand van ver.</p>
-        </div>
-      </div>
+      <div class="fin"><span class="fin-tag">Wmo</span><h4>Via gemeente</h4><p>Wmo-beschikking van de gemeente. De gemeente betaalt — u betaalt niets.</p></div>
+      <div class="fin ft"><div class="fin-badge">⚡ Snelste route</div><span class="fin-tag">PGB</span><h4>Persoonsgebonden budget</h4><p>Al een PGB? Dan starten we direct via SVB-trekkingsrecht.</p></div>
+      <div class="fin"><span class="fin-tag">Jeugdwet</span><h4>Via jeugdteam</h4><p>Verwijzing via jeugdteam of wijkteam, voor jongeren tot 18 jaar.</p></div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CTA -->
 <section>
-  <div class="si">
-    <span class="lbl">Direct contact</span>
-    <h2 class="ttl">Klaar om te beginnen?<br><em>Wij ook.</em></h2>
-    <p class="sub">Eerste kennismaking is gratis en vrijblijvend. Wij reageren persoonlijk — geen automatisch antwoord.</p>
-    <div class="cgrid">
+  <div class="wrap">
+    <div class="cta-bar">
       <div>
-        <a href="tel:+31797200520" class="cm"><div class="cm-ico">📞</div><div><strong>079 720 05 20</strong><span>Ma–za, 08:00–20:00</span></div></a>
-        <a href="mailto:info@gripbegeleiding.nl" class="cm"><div class="cm-ico">✉️</div><div><strong>info@gripbegeleiding.nl</strong><span>Reactie binnen 1 werkdag</span></div></a>
-        <a href="https://wa.me/31797200520" class="cm"><div class="cm-ico">💬</div><div><strong>WhatsApp</strong><span>Ook voor ouders en verwijzers</span></div></a>
-        <div class="cinfo"><strong>GRIP Begeleiding</strong> · Zoetermeer, Den Haag, Delft en Rijswijk<br>KvK: 76801284 · AGB: 41521169 · SKJ: 160013906</div>
+        <h3>Klaar om te beginnen?<br><em>Wij ook.</em></h3>
+        <p style="margin-top:8px;color:var(--ink3);font-size:14px">Eerste kennismaking is gratis en vrijblijvend. Wij reageren persoonlijk.</p>
       </div>
-      <div class="cform">
-        <h3>Stuur een bericht</h3>
-        <p class="cfsub">Wij lezen elk bericht persoonlijk en reageren snel.</p>
-        <div class="fr">
-          <div class="fg"><label>Voornaam</label><input type="text" placeholder="Voornaam" id="fn"/></div>
-          <div class="fg"><label>Achternaam</label><input type="text" placeholder="Achternaam"/></div>
-        </div>
-        <div class="fg"><label>E-mailadres</label><input type="email" placeholder="jouw@email.nl" id="em"/></div>
-        <div class="fg"><label>Ik neem contact op als…</label><select><option>Ouder / verzorger van een kind (10–18)</option><option>Cliënt zelf (18+)</option><option>Verwijzer (wijkteam, jeugdteam)</option><option>Verwijzer (POH-GGZ, huisarts)</option><option>School of werkgever</option><option>Anders</option></select></div>
-        <div class="fg"><label>Omschrijving</label><textarea placeholder="Wat speelt er? Alles is welkom."></textarea></div>
-        <button class="fsub" onclick="sub()">Verstuur bericht →</button>
-        <div class="fok" id="fok"><h4>✓ Bericht ontvangen!</h4><p>Wij nemen binnen 48 uur contact op. Tot snel!</p></div>
-        <p class="fprivacy">Door te versturen ga je akkoord met ons <a href="privacybeleid.html">privacybeleid</a>.</p>
+      <div class="cta-bar-btns">
+        <a href="contact.html" class="btn btn-dark">Neem contact op →</a>
+        <a href="tel:+31797200520" class="btn btn-outline">079 720 05 20</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="fi">
-    <div class="fgrid">
-      <div><div class="flogo"><div class="flm"><svg viewBox="0 0 24 24" fill="none"><path d="M18 12A6 6 0 1 0 12 18" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/><line x1="12" y1="12" x2="18" y2="12" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/><line x1="18" y1="12" x2="18" y2="16" stroke="#1B3A5C" stroke-width="2.5" stroke-linecap="round"/></svg></div><div class="fln"><strong>GRIP</strong><small>Begeleiding</small></div></div><p class="fdesc">Ambulante begeleiding voor kinderen, jongeren en jongvolwassenen (10–30 jaar) met autisme en LVB in Zoetermeer en de regio.</p><p style="font-size:12px;color:var(--sm);margin-top:12px">KvK 76801284 · Zoetermeer</p></div>
-      <div class="fcol"><h4>Begeleiding</h4><ul><li><a href="autisme-begeleiding.html">Autismebegeleiding</a></li><li><a href="lvb-begeleiding.html">LVB-ondersteuning</a></li><li><a href="scholen-werkgevers.html">Scholen &amp; werkgevers</a></li><li><a href="voor-verwijzers.html">Voor verwijzers</a></li></ul></div>
-      <div class="fcol"><h4>Organisatie</h4><ul><li><a href="over-ons.html">Over ons</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacybeleid.html">Privacybeleid</a></li></ul></div>
-      <div class="fcol"><h4>Contact</h4><ul><li><a href="tel:+31797200520">079 720 05 20</a></li><li><a href="mailto:info@gripbegeleiding.nl">info@gripbegeleiding.nl</a></li><li><a href="https://wa.me/31797200520">WhatsApp</a></li></ul><p style="font-size:11px;color:var(--sm);margin-top:14px">Ma–za · 08:00–20:00</p></div>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="fbrand">
+        <span class="fname">GRIP</span>
+        <span class="ftag">Begeleiding</span>
+        <p>Ambulante begeleiding voor kinderen, jongeren en jongvolwassenen (10–30 jaar) met autisme of LVB in Zoetermeer en omgeving.</p>
+        <div class="fskj"><div class="fskj-dot"></div><span>SKJ-geregistreerd</span></div>
+      </div>
+      <div class="fcol">
+        <h4>Begeleiding</h4>
+        <ul>
+          <li><a href="autisme-begeleiding.html">Autismebegeleiding</a></li>
+          <li><a href="lvb-begeleiding.html">LVB-begeleiding</a></li>
+          <li><a href="voor-verwijzers.html">Voor verwijzers</a></li>
+          <li><a href="scholen-werkgevers.html">Scholen &amp; werkgevers</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Organisatie</h4>
+        <ul>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="werken-bij.html">Werken bij</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacybeleid.html">Privacybeleid</a></li>
+          <li><a href="klachtenreglement.html">Klachtenreglement</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="fbot"><p>© 2026 GRIP Begeleiding · KvK 76801284 · AGB: 41521169 · Zoetermeer</p><div style="display:flex;gap:16px"><a href="privacybeleid.html">Privacybeleid</a></div></div>
+    <div class="fbot">
+      <p>© 2026 GRIP Begeleiding · KvK 76801284 · Zoetermeer</p>
+      <div style="display:flex;gap:16px">
+        <a href="privacybeleid.html">Privacy</a>
+        <a href="klachtenreglement.html">Klachten</a>
+        <a href="https://app.zilliz.com" target="_blank" class="fportal">🔐 Medewerkers portaal</a>
+      </div>
+    </div>
   </div>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px">
-        <svg width="28" height="28" viewBox="0 0 100 100" fill="none">
-          <rect width="100" height="100" rx="12" fill="#E8A020"/>
-          <text x="50" y="58" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="34" fill="white">KvK</text>
-        </svg>
-        <div>
-          <p style="font-size:12px;font-weight:700;color:var(--white);margin:0">KvK ingeschreven</p>
-          <p style="font-size:10px;color:var(--sm);margin:0">76801284 · Zoetermeer</p>
-        </div>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px">
-        <svg width="28" height="28" viewBox="0 0 100 100" fill="none">
-          <rect width="100" height="100" rx="12" fill="#2D7A3A"/>
-          <text x="50" y="58" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="28" fill="white">AGB</text>
-        </svg>
-        <div>
-          <p style="font-size:12px;font-weight:700;color:var(--white);margin:0">AGB-geregistreerd</p>
-          <p style="font-size:10px;color:var(--sm);margin:0">41521169 · Vektis</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- AANGESLOTEN BIJ -->
-    <div style="padding:20px 0;border-top:.5px solid rgba(255,255,255,.08);margin-top:4px">
-      <p style="font-size:11px;color:var(--sm);font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px">Aangesloten bij &amp; gecertificeerd</p>
-      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
-
-        <!-- SKJ -->
-        <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px">
-          <svg width="26" height="26" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="48" fill="#1B5E8C"/><text x="50" y="44" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="26" fill="white">SKJ</text><text x="50" y="62" text-anchor="middle" font-family="Arial" font-size="10" fill="#B8D4E8">Kwaliteitsregister</text><text x="50" y="74" text-anchor="middle" font-family="Arial" font-size="10" fill="#B8D4E8">Jeugd</text></svg>
-          <div><p style="font-size:11px;font-weight:700;color:var(--white);margin:0">SKJ</p><p style="font-size:9px;color:var(--sm);margin:0">160013906</p></div>
-        </div>
-
-        <!-- KvK -->
-        <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px">
-          <svg width="26" height="26" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="14" fill="#E8A020"/><text x="50" y="60" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="32" fill="white">KvK</text></svg>
-          <div><p style="font-size:11px;font-weight:700;color:var(--white);margin:0">KvK</p><p style="font-size:9px;color:var(--sm);margin:0">76801284</p></div>
-        </div>
-
-        <!-- AGB / Vektis -->
-        <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px">
-          <svg width="26" height="26" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="14" fill="#2D7A3A"/><text x="50" y="60" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="28" fill="white">AGB</text></svg>
-          <div><p style="font-size:11px;font-weight:700;color:var(--white);margin:0">AGB / Vektis</p><p style="font-size:9px;color:var(--sm);margin:0">41521169</p></div>
-        </div>
-
-        <!-- Klachtenportaal Zorg -->
-        <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px">
-          <svg width="26" height="26" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="14" fill="#8B1A1A"/><text x="50" y="46" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="18" fill="white">KP</text><text x="50" y="64" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFC0C0">Zorg</text></svg>
-          <div><p style="font-size:11px;font-weight:700;color:var(--white);margin:0">Klachtenportaal</p><p style="font-size:9px;color:var(--sm);margin:0">Wkkgz-conform</p></div>
-        </div>
-
-        <!-- Wkkgz -->
-        <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px">
-          <svg width="26" height="26" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="14" fill="#4A4A8A"/><text x="50" y="54" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="20" fill="white">Wkkgz</text></svg>
-          <div><p style="font-size:11px;font-weight:700;color:var(--white);margin:0">Wkkgz</p><p style="font-size:9px;color:var(--sm);margin:0">Klachtenregeling</p></div>
-        </div>
-
-        <!-- AVG -->
-        <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 14px">
-          <svg width="26" height="26" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="14" fill="#1A5C3A"/><text x="50" y="60" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="28" fill="white">AVG</text></svg>
-          <div><p style="font-size:11px;font-weight:700;color:var(--white);margin:0">AVG</p><p style="font-size:9px;color:var(--sm);margin:0">Privacybeleid</p></div>
-        </div>
-
-      </div>
-
-      <!-- Documents & portaal links -->
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
-        <a href="privacybeleid.html" style="font-size:11px;color:var(--sm);text-decoration:none;padding:4px 10px;background:rgba(255,255,255,.05);border-radius:6px;border:.5px solid rgba(255,255,255,.1)">📄 Privacybeleid</a>
-        <a href="klachtenreglement.html" style="font-size:11px;color:var(--sm);text-decoration:none;padding:4px 10px;background:rgba(255,255,255,.05);border-radius:6px;border:.5px solid rgba(255,255,255,.1)">📋 Klachtenreglement</a>
-        <a href="https://www.klachtenportaalzorg.nl" target="_blank" rel="noopener" style="font-size:11px;color:var(--sm);text-decoration:none;padding:4px 10px;background:rgba(255,255,255,.05);border-radius:6px;border:.5px solid rgba(255,255,255,.1)">⚖️ Klachtenportaal Zorg</a>
-        <a href="https://app.zilliz.com" target="_blank" rel="noopener" style="font-size:11px;color:var(--amber);text-decoration:none;padding:4px 10px;background:rgba(244,168,41,.08);border-radius:6px;border:.5px solid rgba(244,168,41,.2);font-weight:600">🔐 Medewerkers — rapportageportaal</a>
-      </div>
-    </div>
 </footer>
-<script>function sub(){if(!document.getElementById('fn').value||!document.getElementById('em').value){alert('Vul minimaal je naam en e-mailadres in.');return}document.getElementById('fok').classList.add('show');document.querySelector('.fsub').style.display='none'}</script>
+<script>
+window.addEventListener("scroll",()=>{document.getElementById("nav").classList.toggle("up",scrollY>10)});
+function toggleNav(){
+  const ul=document.querySelector(".nlinks");
+  const open=ul.style.display==="flex";
+  ul.style.cssText=open?"":"display:flex;flex-direction:column;position:fixed;top:64px;left:0;right:0;background:#fff;padding:16px 6vw;border-bottom:1px solid #E5E7EB;z-index:99;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.08)";
+}
+</script>
 </body>
 </html>
